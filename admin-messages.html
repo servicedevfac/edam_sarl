@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Administration - EDAM SARL</title>
+    <link rel="stylesheet" href="asset/styles/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="admin-body">
+
+    <div class="admin-wrapper">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <img src="asset/images/logo.png" alt="Logo">
+                <h3>Admin Panel</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                    <li><a href="admin-quotes.html"><i class="fas fa-file-invoice-dollar"></i> Devis Reçus</a></li>
+                    <li><a href="admin-messages.html" class="active"><i class="fas fa-envelope"></i> Messages</a></li>
+                    <li><a href="index.html"><i class="fas fa-external-link-alt"></i> Voir le site</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <div class="header-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Rechercher des messages...">
+                </div>
+                <div class="header-profile">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="profile-info">
+                        <img src="asset/images/personl.jpg" alt="Admin">
+                        <span>Admin EDAM</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="admin-content">
+                <div class="admin-container">
+                    <div class="page-title-row">
+                        <h1>Tous les Messages Contact</h1>
+                        <div class="header-actions">
+                            <button class="btn btn-primary btn-small"><i class="fas fa-envelope-open-text"></i> Marquer
+                                tout comme lu</button>
+                        </div>
+                    </div>
+
+                    <div class="admin-table-card">
+                        <div class="table-responsive">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Expéditeur</th>
+                                        <th>Email</th>
+                                        <th>Sujet</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="unread">
+                                        <td><strong>Sery Koffi</strong></td>
+                                        <td>s.koffi@email.com</td>
+                                        <td>Demande d'informations sur les tarifs</td>
+                                        <td>05 Mars 2026</td>
+                                        <td><span class="status-badge pending">Non lu</span></td>
+                                        <td>
+                                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Julie Ama</strong></td>
+                                        <td>j.ama@email.com</td>
+                                        <td>Proposition de partenariat commercial</td>
+                                        <td>03 Mars 2026</td>
+                                        <td><span class="status-badge approved">Lu</span></td>
+                                        <td>
+                                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr class="unread">
+                                        <td><strong>Bakary Touré</strong></td>
+                                        <td>b.toure@email.com</td>
+                                        <td>Question sur la galerie photos</td>
+                                        <td>02 Mars 2026</td>
+                                        <td><span class="status-badge pending">Non lu</span></td>
+                                        <td>
+                                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Lucie N'guessan</strong></td>
+                                        <td>l.nguessan@email.com</td>
+                                        <td>Remerciements pour le service EDAM Clean</td>
+                                        <td>28 Fév 2026</td>
+                                        <td><span class="status-badge approved">Lu</span></td>
+                                        <td>
+                                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-pagination">
+                            <span>Affichage de 1 à 4 sur 24 messages</span>
+                            <div class="pagination-btns">
+                                <button disabled><i class="fas fa-chevron-left"></i></button>
+                                <button class="active">1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

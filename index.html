@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDAM SARL – Excellence & Professionnalisme</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="asset/styles/style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,16 +36,16 @@
         <div class="container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="logo.png" alt="EDAM SARL Logo">
+                    <img src="asset/images/logo.png" alt="EDAM SARL Logo">
                 </a>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html" class="active">Accueil</a></li>
                     <li><a href="about.html">A Propos</a></li>
-                    <li><a href="#">EDAM Clean</a></li>
-                    <li><a href="#">EDAM Gift</a></li>
-                    <li><a href="#">Galerie</a></li>
+                    <li><a href="edan-clean.html">EDAM Clean</a></li>
+                    <li><a href="edam_gift.html">EDAM Gift</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -53,25 +53,48 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>EDAM SARL – Excellence & Professionnalisme au Service de Vos Besoins</h1>
-                    <p>Entreprise spécialisée dans les services de nettoyage professionnels et partenaire d'une
-                        entreprise de cadeaux personnalisés.</p>
-                    <a href="#" class="btn btn-primary">En savoir plus</a>
+        <!-- Hero Slider Section -->
+        <section class="hero-slider">
+            <div class="slides-container">
+                <div class="slide active"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('asset/images/industrie.jpg');">
+                    <div class="container hero-content" style="color: white;">
+                        <h1>EDAM SARL – Excellence & Professionnalisme au Service de Vos Besoins</h1>
+                        <p>Entreprise spécialisée dans les services de nettoyage professionnels et partenaire d'une
+                            entreprise de cadeaux personnalisés.</p>
+                        <a href="about.html" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('asset/images/bureau.jpg');">
+                    <div class="container hero-content" style="color: white;">
+                        <h1>EDAM CLEAN – Propreté Irréprochable</h1>
+                        <p>Solutions de nettoyage industriel et résidentiel adaptées à vos exigences de qualité et de
+                            rigueur.</p>
+                        <a href="edan-clean.html" class="btn btn-primary">Découvrir nos services</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('asset/images/chantier.jpg');">
+                    <div class="container hero-content" style="color: white;">
+                        <h1>EDAM GIFT – Émotion & Créativité</h1>
+                        <p>Marquez les esprits avec nos cadeaux personnalisés uniques et de haute qualité.</p>
+                        <a href="edam_gift.html" class="btn btn-primary">Voir la collection</a>
+                    </div>
                 </div>
             </div>
+
             <div class="hero-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
             </div>
         </section>
 
         <!-- About Section -->
-        <section class="section-padding container">
+        <section class="section-padding container reveal-up">
             <div class="about-grid">
                 <div class="about-content">
                     <span class="about-tag">A propos de nous</span>
@@ -85,13 +108,13 @@
                     <a href="#" class="btn btn-primary btn-small">Lire Plus</a>
                 </div>
                 <div class="about-image">
-                    <img src="ec62939e1e0730a960df138eae1812a06dd41603.jpg" alt="Team working">
+                    <img src="asset/images/ec62939e1e0730a960df138eae1812a06dd41603.jpg" alt="Team working">
                 </div>
             </div>
         </section>
 
         <!-- Stats Banner -->
-        <section class="stats-banner">
+        <section class="stats-banner reveal-fade">
             <div class="container">
                 <div class="stats-grid">
                     <div class="stat-item">
@@ -115,7 +138,7 @@
         </section>
 
         <!-- Services Section -->
-        <section class="section-padding services-section">
+        <section class="section-padding services-section reveal-up">
             <div class="container">
                 <div class="section-header">
                     <h2>Nos Services</h2>
@@ -123,7 +146,7 @@
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="card-img card-clean">
-                            <img src="service1.png" alt="EDAM Clean">
+                            <img src="asset/images/service1.png" alt="EDAM Clean">
                         </div>
                         <div class="card-content">
                             <a href="#" class="btn btn-primary btn-small">Voir le site</a>
@@ -131,7 +154,7 @@
                     </div>
                     <div class="service-card">
                         <div class="card-img card-gift">
-                            <img src="service.png" alt="EDAM Gift">
+                            <img src="asset/images/service.png" alt="EDAM Gift">
                         </div>
                         <div class="card-content">
                             <a href="#" class="btn btn-primary btn-small">Voir le site</a>
@@ -156,10 +179,10 @@
         </section>
 
         <!-- Why Us Section -->
-        <section class="section-padding container">
+        <section class="section-padding container reveal-up">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="1a9b30e45b5f6677ae76bacfb996aa37031d45a6.jpg" alt="Hands together">
+                    <img src="asset/images/1a9b30e45b5f6677ae76bacfb996aa37031d45a6.jpg" alt="Hands together">
                 </div>
                 <div class="about-content">
                     <h2>Pourquoi nous choisir ?</h2>
@@ -192,10 +215,10 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Accueil</a></li>
                         <li><a href="about.html">A Propos</a></li>
-                        <li><a href="#">EDAM Clean</a></li>
-                        <li><a href="#">EDAM Gift</a></li>
-                        <li><a href="#">Galerie</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="edan-clean.html">EDAM Clean</a></li>
+                        <li><a href="edam_gift.html">EDAM Gift</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -214,6 +237,31 @@
         </div>
     </footer>
 
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        let slideInterval = setInterval(nextSlide, 5000);
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            dots[currentSlide].classList.remove('active');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function goToSlide(n) {
+            clearInterval(slideInterval);
+            showSlide(n);
+            slideInterval = setInterval(nextSlide, 5000);
+        }
+    </script>
+    <script src="asset/js/script.js"></script>
 </body>
 
 </html>

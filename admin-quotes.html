@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devis Reçus - Administration - EDAM SARL</title>
+    <link rel="stylesheet" href="asset/styles/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="admin-body">
+
+    <div class="admin-wrapper">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <img src="asset/images/logo.png" alt="Logo">
+                <h3>Admin Panel</h3>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin.html"><i class="fas fa-th-large"></i> Dashboard</a></li>
+                    <li><a href="admin-quotes.html" class="active"><i class="fas fa-file-invoice-dollar"></i> Devis
+                            Reçus</a></li>
+                    <li><a href="admin-messages.html"><i class="fas fa-envelope"></i> Messages</a></li>
+                    <li><a href="index.html"><i class="fas fa-external-link-alt"></i> Voir le site</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <div class="header-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Rechercher des devis...">
+                </div>
+                <div class="header-profile">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="profile-info">
+                        <img src="asset/images/personl.jpg" alt="Admin">
+                        <span>Admin EDAM</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="admin-content">
+                <div class="admin-container">
+                    <div class="page-title-row">
+                        <h1>Tous les Devis Reçus</h1>
+                        <button class="btn btn-primary btn-small"><i class="fas fa-download"></i> Exporter CSV</button>
+                    </div>
+
+                    <div class="admin-table-card">
+                        <div class="table-filters">
+                            <div class="filter-group">
+                                <label>Statut:</label>
+                                <select>
+                                    <option>Tous</option>
+                                    <option>En attente</option>
+                                    <option>Traité</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="admin-table">
+                                <thead>
+                                    <tr>
+                                        <th>Client</th>
+                                        <th>Email / Mobile</th>
+                                        <th>Service</th>
+                                        <th>Date</th>
+                                        <th>Statut</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Jean Dupont</strong></td>
+                                        <td>j.dupont@email.com<br><small>01 02 03 04 05</small></td>
+                                        <td>Nettoyage Bureau</td>
+                                        <td>05 Mars 2026</td>
+                                        <td><span class="status-badge pending">En attente</span></td>
+                                        <td>
+                                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Marie Koné</strong></td>
+                                        <td>m.kone@email.com<br><small>07 08 09 10 11</small></td>
+                                        <td>Cadeaux Perso</td>
+                                        <td>04 Mars 2026</td>
+                                        <td><span class="status-badge approved">Traité</span></td>
+                                        <td>
+                                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <!-- Plus de données fictives -->
+                                    <tr>
+                                        <td><strong>Alain Kouassi</strong></td>
+                                        <td>a.kouassi@email.com<br><small>05 06 07 08 09</small></td>
+                                        <td>Nettoyage Industriel</td>
+                                        <td>02 Mars 2026</td>
+                                        <td><span class="status-badge pending">En attente</span></td>
+                                        <td>
+                                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Sophie Traoré</strong></td>
+                                        <td>s.traore@email.com<br><small>01 44 55 66 77</small></td>
+                                        <td>Nettoyage Résidentiel</td>
+                                        <td>01 Mars 2026</td>
+                                        <td><span class="status-badge approved">Traité</span></td>
+                                        <td>
+                                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                                            <button class="action-btn delete"><i class="fas fa-trash"></i></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-pagination">
+                            <span>Affichage de 1 à 4 sur 12 entrées</span>
+                            <div class="pagination-btns">
+                                <button disabled><i class="fas fa-chevron-left"></i></button>
+                                <button class="active">1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
