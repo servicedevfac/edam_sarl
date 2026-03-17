@@ -1,0 +1,104 @@
+@extends('layouts.public.haeder')
+@section('content')
+    <main>
+        <!-- Page Header / Breadcrumb -->
+        <section class="page-header reveal-fade">
+            <div class="container">
+                <h1>CONTACTEZ-NOUS</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Accueil</a> <i class="fas fa-chevron-right"></i> <span>Contact</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section-padding container reveal-up">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info-wrapper">
+                    <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                        <span class="about-tag">Nos Coordonnées</span>
+                        <h2>PRENDRE CONTACT</h2>
+                        <p>Nous sommes à votre écoute pour toute demande d'information ou de devis. N'hésitez pas à nous
+                            contacter par téléphone, email ou en remplissant le formulaire.</p>
+                    </div>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="card-text">
+                                <h3>Téléphone</h3>
+                                <p>+225 01 01 01 01 01</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="card-text">
+                                <h3>Email</h3>
+                                <p>infos@edamsarl.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="card-text">
+                                <h3>Adresse</h3>
+                                <p>Cocody Angré Nouveau CHU, Abidjan</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-clock"></i></div>
+                            <div class="card-text">
+                                <h3>Heures de bureau</h3>
+                                <p>Lun-Ven: 08H00 - 17H00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                @if (session('success'))
+                    <div class="alert alert-success" style="background: #10b981; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 20px;"  >
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                @if (session('error'))
+                    <div class="alert alert-error" style="background: #ef4444; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 20px;"  >
+                        {{ session('error') }}
+                    </div>
+                @endif
+
+                    <form action="{{ route('messages.store') }}" method="POST" class="contact-form">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" name="nom" placeholder="Votre Nom complet" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Votre Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="telephone" placeholder="Votre Téléphone" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="sujet" placeholder="Sujet" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Votre Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; border:none;">Envoyer le Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section container reveal-up">
+            <div class="map-container">
+            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1434586644823!2d-3.9279979!3d5.3951005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc193f53888806d%3A0x43d6fa134e0be6ea!2sEDAM%20SARL!5e0!3m2!1sfr!2sci!4v1773074560427!5m2!1sfr!2sci" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+@endsection
