@@ -112,29 +112,27 @@
                     <div class="team-member">
                         <img src="asset/images/personl.jpg" alt="Directeur Général">
                         <div class="team-member-overlay">
-                            <span>Directeur Général</span>
+                            <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">Directeur Général</span>
                         </div>
                     </div>
                     <div class="team-member">
                         <img src="asset/images/personl.jpg" alt="Chef de Projet">
                         <div class="team-member-overlay">
-                            <span>Chef de Projet</span>
+                            <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">Chef de Projet</span>
                         </div>
                     </div>
                     <div class="team-member">
                         <img src="asset/images/personl.jpg" alt="Responsable Technique">
                         <div class="team-member-overlay">
-                            <span>Responsable Technique</span>
+                            <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">Responsable Technique</span>
                         </div>
                     </div>
                     <div class="team-member">
                         <img src="asset/images/personl.jpg" alt="Assistante Administrative">
                         <div class="team-member-overlay">
-                            <span>Assistante Administrative</span>
+                            <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">Assistante Administrative</span>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </section>

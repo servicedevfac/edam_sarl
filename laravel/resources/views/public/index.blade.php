@@ -4,26 +4,37 @@
         <!-- Hero Slider Section -->
         <section class="hero-slider">
             <div class="slides-container">
-                
-                <!-- Slide 2 -->
+                <!-- Slide 1 -->
                 <div class="slide active"
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/vison.jpg') }}');">
+                    <div class="container">
+                        <div class="hero-content" style="color: white;">
+                            <h1 style="font-size: 40px;">EDAM SARL – Votre Vision, Notre Mission</h1>
+                            <p>Nous transformons vos besoins en solutions concrètes avec professionnalisme et expertise.</p>
+                            <br>
+                            <a href="/about" class="btn btn-primary btn-small">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="slide "
                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/bureau.jpg') }}');">
                     <div class="container">
                         <div class="hero-content" style="color: white;">
-                            <h1>EDAM CLEAN – Propreté Irréprochable</h1>
+                            <h1 style="font-size: 40px;">EDAM CLEAN – Propreté Irréprochable</h1>
                             <p>Solutions de nettoyage industriel et résidentiel adaptées à vos exigences de qualité et de
                                 rigueur.</p>
                             <br>
-                            <a href="/edan-clean" class="btn btn-primary btn-small">Découvrir nos services</a>
+                            <a href="/edan-clean" class="btn btn-primary btn-small">Découvrir nos prestations</a>
                         </div>
                     </div>
                 </div>
                 <!-- Slide 3 -->
-                <div class="slide"
+                 <div class="slide"
                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/chantier.jpg') }}');">
                     <div class="container">
                         <div class="hero-content" style="color: white;">
-                            <h1>EDAM GIFT – Émotion & Créativité</h1>
+                            <h1 style="font-size: 40px;">EDAM GIFT – Émotion & Créativité</h1>
                             <p>Marquez les esprits avec nos cadeaux personnalisés uniques et de haute qualité.</p>
                             <br>
                             <a href="/edam_gift" class="btn btn-primary btn-small">Voir la collection</a>
@@ -95,8 +106,8 @@
                         <div class="card-img card-clean">
                             <img src="asset/images/service1.png" alt="EDAM Clean">
 
-                            <div class="card-title">
-                                <h2>EDAM Clean</h2>
+                            <div class="card-title" style="color: white;">
+                                <h3>EDAM Clean</h3>
                             </div>
                         </div>
                         <div class="card-content">
@@ -117,15 +128,20 @@
 
         <!-- Partners Ribbons -->
         <section class="partners-ribbon ">
-            <div class="container partners-flex">
+            <div class="container-fluid partners-flex">
                 <span>VISA</span>
+                <i class="fab fa-tumblr"></i>
+                <i class="fas fa-snowflake"></i>
+                <i class="fab fa-windows"></i>
+                <i class="fab fa-tumblr"></i>
+                <i class="fas fa-snowflake"></i>
+                <i class="fab fa-windows"></i>
                 <i class="fab fa-tumblr"></i>
                 <i class="fas fa-snowflake"></i>
                 <i class="fab fa-windows"></i>
                 <i class="fab fa-microsoft"></i>
                 <i class="fab fa-slack"></i>
                 <i class="fab fa-safari"></i>
-                <i class="fab fa-openai"></i>
             </div>
         </section>
 
@@ -148,27 +164,3 @@
     </main>
 
 @endsection
-<script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
-    let slideInterval = setInterval(nextSlide, 5000);
-
-    function showSlide(n) {
-        slides[currentSlide].classList.remove('active');
-        dots[currentSlide].classList.remove('active');
-        currentSlide = (n + slides.length) % slides.length;
-        slides[currentSlide].classList.add('active');
-        dots[currentSlide].classList.add('active');
-    }
-
-    function nextSlide() {
-        showSlide(currentSlide + 1);
-    }
-
-    function goToSlide(n) {
-        clearInterval(slideInterval);
-        showSlide(n);
-        slideInterval = setInterval(nextSlide, 5000);
-    }
-</script>

@@ -136,7 +136,12 @@ nav ul li a.active {
 }
 
 .hero-content {
-    max-width: 800px;
+    color: white;
+    margin-left: 150px !important;
+    margin-right: 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 800px !important;
 }
 
 .hero h1 {
@@ -361,18 +366,17 @@ nav ul li a.active {
 
 .partners-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* 🔥 clé */
     align-items: center;
-    opacity: 1;
-    color: #f0eaeac7;
-
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px;
 }
-
 .partners-flex i,
 .partners-flex span {
-    font-size: 4rem;
-    margin: 10px 20px;
-    font-weight: 700;
+    font-size: 3rem;
+    flex: 1; /* 🔥 chaque élément prend de l’espace */
+    text-align: center;
 }
 
 /* Footer */
@@ -621,20 +625,11 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
 }
-
 .team-member-overlay {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    background: rgba(13, 35, 57, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 2;
+    text-align: center;
 }
 
 .team-member span {
@@ -642,10 +637,14 @@ footer {
     font-size: var(--fs-lg);
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
+
+    display: block;
+    width: 100%;
+
     transform: translateY(20px);
     transition: transform 0.3s ease;
 }
-
 .team-member:hover img {
     transform: scale(1.1);
 }
@@ -653,7 +652,9 @@ footer {
 .team-member:hover .team-member-overlay {
     opacity: 1;
 }
-
+.team-member-overlay span {
+    line-height: 1.4;
+}
 .team-member:hover span {
     transform: translateY(0);
 }
@@ -1183,15 +1184,20 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 20px;
     opacity: 0;
     transition: var(--transition);
 }
 
 .gallery-overlay span {
+    display: block;
+    width: 100%;
     color: var(--white);
     font-size: var(--fs-xl);
     font-weight: 700;
     text-transform: uppercase;
+    text-align: center;
     transform: translateY(20px);
     transition: transform 0.3s ease;
 }

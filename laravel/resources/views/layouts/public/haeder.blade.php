@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDAM SARL – Excellence & Professionnalisme</title>
-    <link rel="stylesheet" href="asset/styles/style.css">
+    <link rel="stylesheet" href="{{ asset('asset/styles/style.css') }}">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -98,30 +98,37 @@
     </footer>
 
     <script>
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.slide');
-        const dots = document.querySelectorAll('.dot');
-        let slideInterval = setInterval(nextSlide, 5000);
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            
+            if (slides.length > 0) {
+                let currentSlide = 0;
+                let slideInterval = setInterval(nextSlide, 5000);
 
-        function showSlide(n) {
-            slides[currentSlide].classList.remove('active');
-            dots[currentSlide].classList.remove('active');
-            currentSlide = (n + slides.length) % slides.length;
-            slides[currentSlide].classList.add('active');
-            dots[currentSlide].classList.add('active');
-        }
+                function showSlide(n) {
+                    if (slides[currentSlide]) slides[currentSlide].classList.remove('active');
+                    if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
+                    
+                    currentSlide = (n + slides.length) % slides.length;
+                    
+                    if (slides[currentSlide]) slides[currentSlide].classList.add('active');
+                    if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+                }
 
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
+                function nextSlide() {
+                    showSlide(currentSlide + 1);
+                }
 
-        function goToSlide(n) {
-            clearInterval(slideInterval);
-            showSlide(n);
-            slideInterval = setInterval(nextSlide, 5000);
-        }
+                window.goToSlide = function(n) {
+                    clearInterval(slideInterval);
+                    showSlide(n);
+                    slideInterval = setInterval(nextSlide, 5000);
+                }
+            }
+        });
     </script>
-    <script src="asset/js/script.js"></script>
+    <script src="{{ asset('asset/js/script.js') }}"></script>
 </body>
 
 </html>

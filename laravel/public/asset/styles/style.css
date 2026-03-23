@@ -6,10 +6,10 @@
     --white: #ffffff;
     --text-dark: #333333;
     --text-muted: #666666;
-    --pink-accent: #E91E63;
+    --pink-accent: #ad2e58;
     --font-main: 'Poppins', sans-serif;
     --transition: all 0.3s ease;
-    --max-width: 1200px;
+    --max-width: 1400px;
 
     /* Font Sizes */
     --fs-xs: 0.75rem;
@@ -91,6 +91,7 @@ header {
 }
 
 header .container {
+    max-width: var(--max-width);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -318,6 +319,7 @@ nav ul li a.active {
     align-items: center;
     justify-content: center;
     padding: 30px;
+    background-color: #f48fb1;
 }
 
 .card-clean {
@@ -353,7 +355,7 @@ nav ul li a.active {
 /* Partners */
 .partners-ribbon {
     padding: 20px 0;
-    display: grid;
+    display: list-item;
     background-color: var(--primary-blue);
     overflow-x: hidden;
 }
@@ -1049,7 +1051,7 @@ footer {
 
 /* EDAM Gift Page Specific Styles */
 .gift-hero {
-    height: 400px;
+    height: 50vh;
     background: linear-gradient(to right, #ec407a, #f48fb1);
     display: flex;
     align-items: center;
@@ -1163,7 +1165,7 @@ footer {
 
 /* Galerie Page Specific Styles */
 .gallery-hero {
-    height: 400px;
+    height: 50vh;
     display: flex;
     align-items: center;
     background: linear-gradient(rgba(13, 35, 57, 0.7), rgba(13, 35, 57, 0.7)), url('../images/6fae210c200b41557e08526a547f092ff426249c.jpg') no-repeat center center/cover;
@@ -1885,11 +1887,14 @@ tr.unread td {
 
 
 .hero-content .container {
-    padding-left: 200px;
-    padding-top: 120px;
+    padding-left: 100px !important;
+    padding-top: 120px !important;
+    color: white;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
-.hero-slider .slide>.container {
+.hero-slider .slide {
     padding-left: 0;
     padding-right: 0;
     display: flex;
@@ -1924,6 +1929,7 @@ tr.unread td {
     text-align: left;
     width: 100%;
     max-width: 900px;
+
 }
 
 .hero-slider .hero-content h1 {
@@ -1935,10 +1941,38 @@ tr.unread td {
     width: 100%;
 }
 
+@media (min-width: 1500px) {
+    .hero-slider .slide>.container {
+        margin-left: 600px !important;
+        margin-right: 200px !important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .hero-slider .slide>.container {
+        margin-left: 400px !important;
+        margin-right: 200px !important;
+    }
+}
+
 @media (min-width: 1200px) {
     .hero-slider .slide>.container {
-        margin-left: 314px;
-        margin-right: 314px;
+        margin-left: 350px !important;
+        margin-right: 200px !important;
+    }
+}
+
+@media (min-width: 1100px) {
+    .hero-slider .slide>.container {
+        margin-left: 50px !important;
+        margin-right: 200px !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    .hero-slider .slide>.container {
+        margin-left: 70px !important;
+        margin-right: 200px !important;
     }
 }
 
@@ -2021,11 +2055,28 @@ tr.unread td {
 }
 
 .hero-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
     z-index: 20;
 }
 
 .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid var(--white);
+    cursor: pointer;
     transition: var(--transition);
+}
+
+.dot.active {
+    background: var(--white);
+    transform: scale(1.2);
 }
 
 .dot:hover {
@@ -2292,6 +2343,8 @@ header.header-scrolled .mobile-menu-toggle {
     .about-grid,
     .services-grid {
         text-align: center;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 
     .about-content a.btn,
@@ -2308,6 +2361,7 @@ header.header-scrolled .mobile-menu-toggle {
     .partners-flex {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 50px;
     }
 
     .partners-flex i,
@@ -2431,5 +2485,220 @@ header.header-scrolled .mobile-menu-toggle {
         width: 32px;
         height: 32px;
         margin: 0 2px;
+    }
+}
+
+/* ==========================================
+   EDAM GIFT PAGE STYLES
+   ========================================== */
+
+.gift-intro {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.gift-intro h2 {
+    font-size: var(--fs-3xl);
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: var(--dark-blue);
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-text p {
+    margin-bottom: 20px;
+    color: var(--text-dark);
+    font-size: var(--fs-md);
+    line-height: 1.8;
+}
+
+.why-choose-us {
+    margin-top: 80px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 60px;
+    margin-top: 50px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.feature-number {
+    background-color: #f48fb1;
+    color: var(--white);
+    width: 45px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--fs-lg);
+    flex-shrink: 0;
+}
+
+.feature-content h3 {
+    font-size: var(--fs-base);
+    font-weight: 700;
+    color: var(--dark-blue);
+    line-height: 1.4;
+}
+
+/* Responsive Gift Page */
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .gift-intro h2 {
+        font-size: var(--fs-xl);
+    }
+}
+
+/* ==========================================
+   EDAM CLEAN ABOUT SECTION
+   ========================================== */
+
+.about-clean-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-clean-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-clean-content .about-tag {
+    color: var(--primary-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: var(--fs-xs);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.about-clean-content h2 {
+    font-size: var(--fs-4xl);
+    color: var(--dark-blue);
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.about-clean-content p {
+    margin-bottom: 20px;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+@media (max-width: 992px) {
+    .about-clean-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-clean-content h2 {
+        font-size: var(--fs-2xl);
+    }
+}
+
+/* ==========================================
+   GALLERY LIGHTBOX STYLES
+   ========================================== */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    cursor: zoom-out;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease-out;
+    cursor: default;
+    object-fit: contain;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#lightbox-caption {
+    margin-top: 20px;
+    color: var(--white);
+    font-size: var(--fs-lg);
+    font-weight: 600;
+    text-align: center;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: var(--white);
+    font-size: 50px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: var(--transition);
+    line-height: 1;
+}
+
+.close-lightbox:hover {
+    color: var(--pink-accent);
+    transform: rotate(90deg);
+}
+
+.gallery-item {
+    cursor: zoom-in;
+}
+
+@media (max-width: 768px) {
+    .close-lightbox {
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
     }
 }

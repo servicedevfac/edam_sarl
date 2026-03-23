@@ -27,6 +27,23 @@
                 </div>
             </div>
         </section>
+
+        
+        <!-- About Section -->
+        <section class="section-padding container reveal-up">
+            <div class="about-clean-grid">
+                <div class="about-clean-image">
+                    <img src="asset/images/about-clean.png" alt="Nettoyage EDAM Clean">
+                </div>
+                <div class="about-clean-content">
+                    <span class="about-tag">A Propos d’EDAM Clean</span>
+                    <h2>Brillez, on s’occupe du reste</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Services Grid Section -->
         <section class="section-padding container">
             <div class="section-header">
