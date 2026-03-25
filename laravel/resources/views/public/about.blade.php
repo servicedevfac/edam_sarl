@@ -18,14 +18,21 @@
                 <div class="about-content">
                     <span class="about-tag">Notre Societe</span>
                     <h2>QUI SOMMES-NOUS ?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>EDAM S.A.R.L est une entreprise multisectorielle engagée à offrir des solutions
+innovantes et adaptées aux besoins des particuliers, des entreprises et des
+institutions. Forte de son expertise et de son dynamisme, elle intervient dans
+plusieurs domaines afin d’apporter des services complets et de qualité
+</p>
+                    <p>Nous accompagnons nos clients dans la fourniture d’équipements, le nettoyage
+professionnel, l’aménagement d’espaces, la décoration intérieure, ainsi que
+l’organisation d’événements. Notre objectif est de garantir des prestations
+fiables, efficaces et parfaitement adaptées à chaque projet</p>
+<p>
+Grâce à une équipe compétente et passionnée, EDAM S.A.R.L met un point
+d’honneur à satisfaire ses clients en respectant les délais, en assurant un suivi
+rigoureux et en proposant des solutions sur mesure.
+
+</p>
                     <a href="#" class="btn btn-primary  btn-small">Contactez-nous</a>
                 </div>
                 <div class="about-image">
@@ -44,10 +51,13 @@
                     </div>
                     <div class="vm-content">
                         <h2>NOTRE VISION</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Notre ambition est de devenir un acteur de référence en Côte d’Ivoire et en
+Afrique de l’Ouest dans le domaine des services intégrés. Nous aspirons à bâtir
+une entreprise reconnue pour sa rigueur, son innovation et son sens des
+responsabilités.</p>
+<p>EDAM S.A.R.L souhaite contribuer activement au développement économique
+et social en proposant des solutions modernes, efficaces et durables, au service
+de ses partenaires et de sa communauté</p>
                     </div>
                 </div>
 
@@ -60,10 +70,15 @@
                     </div>
                     <div class="vm-content">
                         <h2>NOTRE MISSION</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Chez EDAM S.A.R.L, notre mission est d’accompagner efficacement les
+particuliers et les entreprises en leur proposant des solutions complètes, fiables
+et innovantes. Nous nous engageons à comprendre chaque besoin afin
+d’apporter des réponses sur mesure, adaptées aux exigences de chaque projet.</p>
+<p>
+À travers la qualité de nos services et notre sens du détail, nous visons à créer
+de la valeur durable pour nos clients, tout en garantissant professionnalisme,
+réactivité et satisfaction.
+</p>
                     </div>
                 </div>
             </div>

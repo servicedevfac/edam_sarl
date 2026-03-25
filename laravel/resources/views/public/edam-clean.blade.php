@@ -38,8 +38,18 @@
                 <div class="about-clean-content">
                     <span class="about-tag">A Propos d’EDAM Clean</span>
                     <h2>Brillez, on s’occupe du reste</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <p>EDAM CLEANest une activité de nettoyage professionnel basée à Cocody,
+Abidjan, spécialisée dans l’entretien de bureaux, immeubles, chantiers et locaux
+professionnels. En tant que PME de proximité, nous offrons à nos clients un
+service fiable, réactif et personnalisé. Nous accompagnons entreprises, syndics
+et particuliers avec une seule priorité : garantir des espaces propres, sains et
+valorisés, au quotidien comme lors d’interventions ponctuelles. Nos équipes
+sont formées, encadrées et suivies régulièrement afin d’assurer une qualité
+constante, le respect des délais et une exécution conforme aux attentes de nos
+clients. Choisir EDAM CLEAN, c’est faire le choix d’un partenaire de confiance,
+capable de s’adapter à vos besoins spécifiques tout en respectant votre
+environnement de travail.
+</p>
                 </div>
             </div>
         </section>
@@ -99,8 +109,7 @@
                             <i class="fas fa-file-invoice-dollar"></i>
                         </div>
                         <h4>PROPOSITION & DEVIS</h4>
-                        <p>Nous échangeons avec vous pour comprendre précisément vos besoins et définir les objectifs de
-                            l'intervention.</p>
+                        <p>Nous établissons une offre détaillée, claire et adaptée à votre budget.</p>
                     </div>
                     <div class="step-box">
                         <span class="step-num">Etape 3</span>
@@ -108,8 +117,8 @@
                             <i class="fas fa-magic"></i>
                         </div>
                         <h4>INTERVENTION PROFESSIONNELLE</h4>
-                        <p>Nous échangeons avec vous pour comprendre précisément vos besoins et définir les objectifs de
-                            l'intervention.</p>
+                        <p>Notre équipe qualifiée intervient selon le planning défini, avec du matériel
+professionnel.</p>
                     </div>
                     <div class="step-box">
                         <span class="step-num">Etape 4</span>
@@ -117,8 +126,8 @@
                             <i class="fas fa-calendar-check"></i>
                         </div>
                         <h4>CONTROLE & SATISFACTION</h4>
-                        <p>Nous échangeons avec vous pour comprendre précisément vos besoins et définir les objectifs de
-                            l'intervention.</p>
+                        <p>Nous effectuons un contrôle qualité et nous assurons de votre entière
+satisfaction.</p>
                     </div>
                 </div>
             </div>
@@ -155,13 +164,14 @@
                     <div class="form-group">
                         <input name="telephone" type="tel" placeholder="Téléphone" required>
                     </div>
-                    <div class="form-group full-width">
+                    <div class="form-group full-width" style="margin-right:15px;">  
                         <select name="service" required>
                             <option value="" disabled selected>Choisir un service</option>
                             <option value="chantier">Chantier</option>
                             <option value="residentiel">Residentiel</option>
                             <option value="bureau">Bureau</option>
                             <option value="industriel">Industriel</option>
+                            <option value="autre">Autre</option>
                         </select>
                     </div>
                     <div class="form-group full-width">

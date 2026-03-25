@@ -10,10 +10,7 @@
                         <p>Nous savons comment vous rendre heureux !</p>
                     </div>
                     <div class="gift-hero-image">
-                        <!-- We use generate_image to create a premium gift box image if not available, 
-                                 or use a placeholder if we find one. 
-                                 Based on the user's reference, it's a pink gift box. -->
-                        <img src="asset/images/git.png" alt="EDAM Gift Box">
+                        <img src="asset/images/git.png" alt="EDAM Gift Box" height="300" width="300">
                     </div>
                 </div>
             </div>
@@ -24,8 +21,17 @@
             <div class="gift-intro">
                 <h2>Bienvenue à EDAM GIFT</h2>
                 <div class="intro-text">
-                    <p>Nous sommes specialisés dans la conception de paniers cadeaux personnalisés et l'organisation d'evenements professionnels et privés.</p>
-                    <p>Nous accompagnons entreprises, institutions, et particuliers dans la valorisation de leurs moments importants: évènements d'entreprise, celebrations privées, cadeaux d'affaires, fetes de fin d'année, lancements de produits, séminaires ou cérémonies.</p>
+                    <p>Nous sommes spécialisée dans la conception de paniers cadeaux personnalisés
+et l’organisation d’événements professionnels et privés. Nous accompagnons
+entreprises, institutions et particuliers dans la valorisation de leurs moments
+importants : événements d’entreprise, célébrations privées, cadeaux d’affaires,
+fêtes de fin d’année, lancements de produits, séminaires ou cérémonies. Grâce
+à une approche créative, personnalisée et rigoureuse, EDAM GIFT transforme
+chaque occasion en une expérience mémorable, en tenant compte de vos
+objectifs, de votre image et de votre budget. Choisir EDAM GIFT, c’est confier
+vos projets à un partenaire fiable, attentif aux détails et engagé dans la réussite
+de votre événement ou de votre action de communication.</p>
+                    
                 </div>
             </div>
 

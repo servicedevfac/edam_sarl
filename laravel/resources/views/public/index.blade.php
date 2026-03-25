@@ -55,13 +55,16 @@
             <div class="about-grid">
                 <div class="about-content">
                     <span class="about-tag">A propos de nous</span>
-                    <h2>EDAM SARL, c'est</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p>
+                    <h2>EDAM SARL, c'est</h2>   
+                    <p>EDAM S.A.R.L est une entreprise multisectorielle engagée à offrir des solutions
+                    innovantes et adaptées aux besoins des particuliers, des entreprises et des
+                    institutions. Forte de son expertise et de son dynamisme, elle intervient dans
+                    plusieurs domaines afin d’apporter des services complets et de qualité
+                    </p>
+                    <p>Nous accompagnons nos clients dans la fourniture d’équipements, le nettoyage
+                        professionnel, l’aménagement d’espaces, la décoration intérieure, ainsi que
+                        l’organisation d’événements. Notre objectif est de garantir des prestations
+                        fiables, efficaces et parfaitement adaptées à chaque projet.</p>
                     <br>
                     <a href="/about" class="btn btn-primary btn-small">Lire Plus</a>
                 </div>
@@ -76,19 +79,19 @@
             <div class="container">
                 <div class="stats-grid">
                     <div class="stat-item">
-                        <h3>25</h3>
-                        <p>Partenaires</p>
+                        <h3 class="counter-value" data-target="1000">0</h3>
+                        <p> prestations réalisées</p>
                     </div>
                     <div class="stat-item">
-                        <h3>32</h3>
-                        <p>Projets finis</p>
+                        <h3 class="counter-value" data-target="500" data-prefix="+">+0</h3>
+                        <p>Clients accompagnés</p>
                     </div>
                     <div class="stat-item">
-                        <h3>500+</h3>
-                        <p>Clients fidèles</p>
+                        <h3 class="counter-value" data-target="24" data-suffix="H">0H</h3>
+                        <p>Disponible</p>
                     </div>
                     <div class="stat-item">
-                        <h3>100%</h3>
+                        <h3 class="counter-value" data-target="100" data-suffix="%">0%</h3>
                         <p>Satisfaction</p>
                     </div>
                 </div>
@@ -127,21 +130,12 @@
         </section>
 
         <!-- Partners Ribbons -->
-        <section class="partners-ribbon ">
-            <div class="container-fluid partners-flex">
-                <span>VISA</span>
-                <i class="fab fa-tumblr"></i>
-                <i class="fas fa-snowflake"></i>
-                <i class="fab fa-windows"></i>
-                <i class="fab fa-tumblr"></i>
-                <i class="fas fa-snowflake"></i>
-                <i class="fab fa-windows"></i>
-                <i class="fab fa-tumblr"></i>
-                <i class="fas fa-snowflake"></i>
-                <i class="fab fa-windows"></i>
-                <i class="fab fa-microsoft"></i>
-                <i class="fab fa-slack"></i>
-                <i class="fab fa-safari"></i>
+        <section class="partners-ribbon">
+            <div class="container-fluid partners-flex" style="display:flex; justify-content:space-evenly; align-items:center; width:100%;">
+                <i><a href="https://wadi-ci.com/home/"><img src="asset/images/image.png" alt="" height="80px" width="80px"></a></i>
+                <i><a href="#"><img src="asset/images/image1.png" alt="" height="80px" width="80px"></a></i>
+                <i><a href="https://www.attouco.com/"><img src="asset/images/image2.png" alt="" height="80px" width="100px"></a></i>
+                <i><a href="#"><img src="asset/images/image3.png" alt="" height="80px" width="80px"></a></i>
             </div>
         </section>
 
@@ -149,15 +143,43 @@
         <section class="section-padding container reveal-up">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="asset/images/1a9b30e45b5f6677ae76bacfb996aa37031d45a6.jpg" alt="Hands together">
+                    <img src="asset/images/1a9b30e45b5f6677ae76bacfb996aa37031d45a6.jpg" alt="Hands together" height="500px">
                 </div>
                 <div class="about-content">
                     <h2>Pourquoi nous choisir ?</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur.</p>
+                    <p>Choisir EDAM S.A.R.L, c’est faire le choix d’un partenaire fiable, capable de
+                        répondre efficacement à tous vos besoins grâce à une expertise
+                        multisectorielle. Nous mettons un point d’honneur à offrir des prestations de
+                        qualité, adaptées à chaque client, tout en respectant les délais et les exigences
+                        spécifiques de chaque projet.
+                    </p>
+                    <p>Notre approche repose sur l’écoute, la rigueur et l’innovation, afin de garantir
+                        des résultats à la hauteur de vos attentes. Que ce soit pour la fourniture
+                        d’équipements, le nettoyage, la décoration ou l’organisation d’événements,
+                        nous vous accompagnons avec professionnalisme à chaque étape.
+                        <div style="display: flex; flex-direction: row; gap: 20px;justify-content: space-between;">
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <img src="https://img.icons8.com/?size=100&id=123575&format=png&color=2196F3" alt="" height="20" width="20">
+                                <span>Professionnalisme</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <img src="https://img.icons8.com/?size=100&id=123575&format=png&color=2196F3" alt="" height="20" width="20">
+                                <span>Rapidité</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                                <img src="https://img.icons8.com/?size=100&id=123575&format=png&color=2196F3" alt="" height="20" width="20">
+                                <span>Personnel qualifié</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <img src="https://img.icons8.com/?size=100&id=123575&format=png&color=2196F3" alt="" height="20" width="20">
+                                <span>Satisfaction garantie</span>
+                            </div>
+                        </div>
+                        </div>
+                    </p>
                 </div>
             </div>
         </section>

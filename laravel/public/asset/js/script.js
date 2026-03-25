@@ -95,4 +95,38 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 6. Number Counter Animation
+    const animateCounter = (el) => {
+        const target = parseInt(el.getAttribute('data-target'));
+        const prefix = el.getAttribute('data-prefix') || '';
+        const suffix = el.getAttribute('data-suffix') || '';
+        const duration = 2000; // 2 seconds animation
+        const stepTime = 20; // update every 20ms
+        const totalSteps = duration / stepTime;
+        const increment = target / totalSteps;
+        let current = 0;
+
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                el.textContent = `${prefix}${target}${suffix}`;
+                clearInterval(timer);
+            } else {
+                el.textContent = `${prefix}${Math.floor(current)}${suffix}`;
+            }
+        }, stepTime);
+    };
+
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const counterElements = document.querySelectorAll('.counter-value');
+    counterElements.forEach(el => counterObserver.observe(el));
 });

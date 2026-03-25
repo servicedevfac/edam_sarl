@@ -366,16 +366,19 @@ nav ul li a.active {
 
 .partners-flex {
     display: flex;
-    justify-content: space-between; /* 🔥 clé */
+    justify-content: space-between;
+    /* 🔥 clé */
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
     padding: 0 20px;
 }
+
 .partners-flex i,
 .partners-flex span {
     font-size: 3rem;
-    flex: 1; /* 🔥 chaque élément prend de l’espace */
+    flex: 1;
+    /* 🔥 chaque élément prend de l’espace */
     text-align: center;
 }
 
@@ -625,6 +628,7 @@ footer {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
 }
+
 .team-member-overlay {
     display: flex;
     align-items: center;
@@ -645,6 +649,7 @@ footer {
     transform: translateY(20px);
     transition: transform 0.3s ease;
 }
+
 .team-member:hover img {
     transform: scale(1.1);
 }
@@ -652,9 +657,11 @@ footer {
 .team-member:hover .team-member-overlay {
     opacity: 1;
 }
+
 .team-member-overlay span {
     line-height: 1.4;
 }
+
 .team-member:hover span {
     transform: translateY(0);
 }
@@ -873,7 +880,7 @@ footer {
 
 .overlay-card:hover {
     transform: scale(1.02);
-    
+
 }
 
 .card-overlay {
@@ -1802,6 +1809,7 @@ tr.unread td {
     width: 100%;
 }
 
+
 .slides-container {
     position: relative;
     width: 100%;
@@ -1877,7 +1885,7 @@ tr.unread td {
     }
 
     .hero-slider h1 {
-        font-size: var(--fs-xxl);
+        font-size: 10; 
     }
 }
 

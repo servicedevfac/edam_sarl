@@ -21,12 +21,12 @@
     <div class="top-bar">
         <div class="container">
             <div class="top-info">
-                <span><i class="fas fa-map-marker-alt"></i> Cocody Angre Nouveau CHU</span>
+                <span><i class="fas fa-map-marker-alt"></i> Angré Djorogobité I non loin  du restaurant The BRIDGE</span>
             </div>
             <div class="top-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61577193561934"><i class="fab fa-facebook-f"></i></a>
+                <a href="http://www.instagram.com/edam.clean"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@edam.clean"><i class="fab fa-tiktok"></i></a>
             </div>
         </div>
     </div>
@@ -62,12 +62,14 @@
             <div class="footer-grid">
                 <div class="footer-col footer-about">
                     <h4>A Propos</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                    <p>
+                    EDAM S.A.R.L propose des services multisectoriels : équipements, nettoyage,
+décoration, événements, import-export, formation et conseil. Nous offrons des
+solutions fiables et adaptées pour particuliers et entreprises.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61580002526478"><i class="fab fa-facebook-f"></i></a>
+                        <a href="http://www.instagram.com/edam.gift"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@edam.gift8"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -84,9 +86,10 @@
                 <div class="footer-col">
                     <h4>Contactez-nous</h4>
                     <ul class="contact-info">
-                        <li><i class="fas fa-phone"></i> +225 01 01 01 01 01</li>
+                        <li><i class="fas fa-phone"></i>  +225 27 22 29 75 08</li>
+                        <li><i class="fas fa-phone"></i>  +225 07 16 48 04 55</li>
                         <li><i class="fas fa-envelope"></i> infos@edamsarl.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Cocody Angre Nouveau CHU</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Angré Djorogobité I non loin du restaurant The BRIDGE</li>
                         <li><i class="fas fa-clock"></i> Lun-Ven: 08H00 - 17H00</li>
                     </ul>
                 </div>
