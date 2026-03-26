@@ -9,10 +9,10 @@
                     style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/vison.jpg') }}');">
                     <div class="container">
                         <div class="hero-content" style="color: white;">
-                            <h1 style="font-size: 40px;">EDAM SARL – Votre Vision, Notre Mission</h1>
-                            <p>Nous transformons vos besoins en solutions concrètes avec professionnalisme et expertise.</p>
+                            <h1 class="animate__animated animate__fadeInDown" style="font-size: 40px;">EDAM SARL – Votre Vision, Notre Mission</h1>
+                            <p class="animate__animated animate__fadeInUp animate__delay-1s">Nous transformons vos besoins en solutions concrètes avec professionnalisme et expertise.</p>
                             <br>
-                            <a href="/about" class="btn btn-primary btn-small">En savoir plus</a>
+                            <a href="/about" class="btn btn-primary btn-small animate__animated animate__zoomIn animate__delay-2s">En savoir plus</a>
                         </div>
                     </div>
                 </div>
@@ -51,11 +51,11 @@
         </section>
 
         <!-- About Section -->
-        <section class="section-padding container reveal-up">
+        <section class="section-padding container">
             <div class="about-grid">
-                <div class="about-content">
+                <div class="about-content" data-reveal="fade-right">
                     <span class="about-tag">A propos de nous</span>
-                    <h2>EDAM SARL, c'est</h2>   
+                    <h2 data-reveal="fade-left" data-delay="200">EDAM SARL, c'est</h2>   
                     <p>EDAM S.A.R.L est une entreprise multisectorielle engagée à offrir des solutions
                     innovantes et adaptées aux besoins des particuliers, des entreprises et des
                     institutions. Forte de son expertise et de son dynamisme, elle intervient dans
@@ -68,14 +68,14 @@
                     <br>
                     <a href="/about" class="btn btn-primary btn-small">Lire Plus</a>
                 </div>
-                <div class="about-image">
-                    <img src="{{ asset('asset/images/ec62939e1e0730a960df138eae1812a06dd41603.jpg') }}" alt="Team working">
+                <div class="about-image" data-reveal="fade-left">
+                    <img src="{{ asset('asset/images/ec62939e1e0730a960df138eae1812a06dd41603.jpg') }}" alt="Team working" style="max-width: 100%;">
                 </div>
             </div>
         </section>
 
         <!-- Stats Banner -->
-        <section class="stats-banner reveal-fade">
+        <section class="stats-banner">
             <div class="container">
                 <div class="stats-grid">
                     <div class="stat-item">
@@ -99,15 +99,15 @@
         </section>
 
         <!-- Services Section -->
-        <section class="section-padding services-section reveal-up">
+        <section class="section-padding services-section" data-reveal="fade-up" style="margin:0 20px 0 20px">
             <div class="container">
                 <div class="section-header">
                     <h2>Nos Services</h2>
                 </div>
                 <div class="services-grid">
-                    <div class="service-card">
-                        <div class="card-img card-clean">
-                            <img src="asset/images/service1.png" alt="EDAM Clean">
+                    <div class="service-card" data-reveal="fade-up" data-delay="100">
+                        <div class="card-img card-clean" data-reveal="zoom-in" data-delay="200">
+                            <img src="asset/images/service1.png" alt="EDAM Clean" class="floating">
 
                             <div class="card-title" style="color: white;">
                                 <h3>EDAM Clean</h3>
@@ -117,9 +117,9 @@
                             <a href="#" class="btn btn-primary btn-small">Voir les details</a>
                         </div>
                     </div>
-                    <div class="service-card">
-                        <div class="card-img card-gift">
-                            <img src="asset/images/service.png" alt="EDAM Gift">
+                    <div class="service-card" data-reveal="fade-up" data-delay="300">
+                        <div class="card-img card-gift" data-reveal="zoom-in" data-delay="400">
+                            <img src="asset/images/service.png" alt="EDAM Gift" class="floating">
                         </div>
                         <div class="card-content">
                             <a href="#" class="btn btn-primary btn-small">Voir le site</a>
@@ -140,12 +140,12 @@
         </section>
 
         <!-- Why Us Section -->
-        <section class="section-padding container reveal-up">
+        <section class="section-padding container" data-reveal="fade-up">
             <div class="about-grid">
-                <div class="about-image">
+                <div class="about-image" data-reveal="fade-right">
                     <img src="asset/images/1a9b30e45b5f6677ae76bacfb996aa37031d45a6.jpg" alt="Hands together" height="500px">
                 </div>
-                <div class="about-content">
+                <div class="about-content" data-reveal="fade-left">
                     <h2>Pourquoi nous choisir ?</h2>
                     <p>Choisir EDAM S.A.R.L, c’est faire le choix d’un partenaire fiable, capable de
                         répondre efficacement à tous vos besoins grâce à une expertise

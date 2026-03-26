@@ -2,7 +2,7 @@
 @section('content')
     <main>
         <!-- Gallery Hero -->
-        <section class="gallery-hero reveal-fade">
+        <section class="gallery-hero">
             <div class="container">
                     <h1>GALERIE PHOTOS</h1>
                     <div class="breadcrumb">
@@ -12,11 +12,11 @@
             </div>
         </section>
         <!-- Gallery Section -->
-        <section class="section-padding reveal-up">
+        <section class="section-padding container" data-reveal="fade-up">
             <div class="container">
                 <div class="gallery-grid">
                   @foreach ($galleries as $gallery)
-                  <div class="gallery-item">
+                  <div class="gallery-item" data-reveal="zoom-in">
                       <img src="{{ asset('images/' . $gallery->image) }}" alt="{{ $gallery->titre }}">
                       <div class="gallery-overlay">
                           <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">{{ $gallery->titre }}</span>
@@ -32,16 +32,12 @@
                   
             </div>
         </section>
-        <section class="partners-ribbon reveal-fade" style="margin-top: 30px;margin-bottom: 30px;">
-            <div class="container partners-flex">
-                <span>VISA</span>
-                <i class="fab fa-tumblr"></i>
-                <i class="fas fa-snowflake"></i>
-                <i class="fab fa-windows"></i>
-                <i class="fab fa-microsoft"></i>
-                <i class="fab fa-slack"></i>
-                <i class="fab fa-safari"></i>
-                <i class="fab fa-openai"></i>
+        <section class="partners-ribbon">
+            <div class="container-fluid partners-flex" style="display:flex; justify-content:space-evenly; align-items:center; width:100%;">
+                <i><a href="https://wadi-ci.com/home/"><img src="asset/images/image.png" alt="" height="80px" width="80px"></a></i>
+                <i><a href="#"><img src="asset/images/image1.png" alt="" height="80px" width="80px"></a></i>
+                <i><a href="https://www.attouco.com/"><img src="asset/images/image2.png" alt="" height="80px" width="100px"></a></i>
+                <i><a href="#"><img src="asset/images/image3.png" alt="" height="80px" width="80px"></a></i>
             </div>
         </section>
 

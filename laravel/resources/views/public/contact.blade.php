@@ -2,7 +2,7 @@
 @section('content')
     <main>
         <!-- Page Header / Breadcrumb -->
-        <section class="page-header reveal-fade">
+        <section class="page-header">
             <div class="container">
                 <h1>CONTACTEZ-NOUS</h1>
                 <div class="breadcrumb">
@@ -12,7 +12,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="section-padding container reveal-up">
+        <section class="section-padding container" data-reveal="fade-up">
             <div class="contact-grid">
                 <!-- Contact Information -->
                 <div class="contact-info-wrapper">
@@ -24,31 +24,31 @@
                     </div>
 
                     <div class="contact-cards">
-                        <div class="contact-card">
+                        <div class="contact-card" data-reveal="fade-up" data-delay="100">
                             <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
                             <div class="card-text">
-                                <h3>Téléphone</h3>
-                                <p>+225 01 01 01 01 01</p>
+                                <h4>Téléphone</h4>
+                                <p>+225 07 16 48 04 55</p>
                             </div>
                         </div>
-                        <div class="contact-card">
+                        <div class="contact-card" data-reveal="fade-up" data-delay="200">
                             <div class="card-icon"><i class="fas fa-envelope"></i></div>
                             <div class="card-text">
-                                <h3>Email</h3>
+                                <h4>Email</h4>
                                 <p>infos@edamsarl.com</p>
                             </div>
                         </div>
-                        <div class="contact-card">
+                        <div class="contact-card" data-reveal="fade-up" data-delay="300">
                             <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
                             <div class="card-text">
-                                <h3>Adresse</h3>
-                                <p>Cocody Angré Nouveau CHU, Abidjan</p>
+                                <h4>Adresse</h4>
+                                <p>Angré Djorogobité I non loin du restaurant The BRIDGE LOUNGE</p>
                             </div>
                         </div>
-                        <div class="contact-card">
+                        <div class="contact-card" data-reveal="fade-up" data-delay="400">
                             <div class="card-icon"><i class="fas fa-clock"></i></div>
                             <div class="card-text">
-                                <h3>Heures de bureau</h3>
+                                <h4>Heures de bureau</h4>
                                 <p>Lun-Ven: 08H00 - 17H00</p>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div class="contact-form-wrapper">
+                <div class="contact-form-wrapper reveal-up" data-delay="500">
                 @if (session('success'))
                     <div class="alert alert-success" style="background: #10b981; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 20px;"  >
                         {{ session('success') }}
@@ -69,7 +69,7 @@
                     </div>
                 @endif
 
-                    <form action="{{ route('messages.store') }}" method="POST" class="contact-form">
+                    <form action="{{ route('messages.store') }}" method="POST" class="contact-form"data-reveal="fade-up" data-delay="100">
                         @csrf
                         <div class="form-group">
                             <input type="text" name="nom" placeholder="Votre Nom complet" required>
@@ -93,8 +93,8 @@
         </section>
 
         <!-- Map Section -->
-        <section class="map-section container reveal-up">
-            <div class="map-container">
+        <section class="map-section container reveal-up" data-reveal="fade-up" data-delay="100" style="margin-left: 0px; margin-right: 0px;">
+            <div class="map-container" data-reveal="fade-up" data-delay="100">
             
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1434586644823!2d-3.9279979!3d5.3951005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc193f53888806d%3A0x43d6fa134e0be6ea!2sEDAM%20SARL!5e0!3m2!1sfr!2sci!4v1773074560427!5m2!1sfr!2sci" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>

@@ -3,25 +3,41 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Intersection Observer for Scroll Reveals
+    // 1. Premium Bi-Directional Scroll Reveal System (Apple Style)
     const revealOptions = {
         threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        rootMargin: '0px 0px -100px 0px'
     };
 
-    const revealObserver = new IntersectionObserver((entries, observer) => {
+    const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
+            const el = entry.target;
+            
+            // Toggle the revealed class based on intersection (bi-directional)
             if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
-                // Once revealed, we don't need to observe it anymore
-                observer.unobserve(entry.target);
+                el.classList.add('revealed');
+            } else {
+                // Remove class when out of view to re-trigger later
+                el.classList.remove('revealed');
             }
         });
     }, revealOptions);
 
-    // Select all elements with reveal classes
-    const revealElements = document.querySelectorAll('.reveal-fade, .reveal-up, .reveal-left, .reveal-right');
+    // Initialize all reveal elements
+    const revealElements = document.querySelectorAll('[data-reveal]');
     revealElements.forEach(el => revealObserver.observe(el));
+
+    // Fallback/Compatibility for animate__ classes if still used
+    const animateElements = document.querySelectorAll('[class*="animate__"]:not(.animate__animated):not([data-reveal])');
+    animateElements.forEach(el => {
+        const obs = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                el.classList.add('animate__animated');
+                obs.unobserve(el);
+            }
+        }, { threshold: 0.1 });
+        obs.observe(el);
+    });
 
     // 2. Smooth Scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

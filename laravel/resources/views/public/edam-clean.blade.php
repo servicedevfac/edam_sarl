@@ -17,13 +17,13 @@
                     <img src="asset/images/bulle.gif" alt="bulle" height="100" width="100">
                 </div>
             </div>
-            <div class="container hero-flex reveal-fade">
-                <div class="hero-left" style="z-index: 2;">
+            <div class="container hero-flex">
+                <div class="hero-left" data-reveal="fade-right">
                     <h1 class="hero-title">EDAM CLEAN</h1>
                     <p class="hero-subtitle">Avec EDAM CLEAN, nous vivons dans la propreté !</p>
                 </div>
-                <div class="hero-right" style="position: absolute; top: 0%; left: 65%; ">
-                    <img src="asset/images/clean.png" alt="Cleaning Supplies" class="hero-img">
+                <div class="hero-right" data-reveal="fade-left" style="position: absolute; top: 20%; left: 65%; ">
+                    <img src="asset/images/clean.png" alt="Cleaning Supplies" class="hero-img floating">
                 </div>
             </div>
         </section>
@@ -32,10 +32,10 @@
         <!-- About Section -->
         <section class="section-padding container reveal-up">
             <div class="about-clean-grid">
-                <div class="about-clean-image">
+                <div class="about-clean-image reveal-left">
                     <img src="asset/images/about-clean.png" alt="Nettoyage EDAM Clean">
                 </div>
-                <div class="about-clean-content">
+                <div class="about-clean-content reveal-right">
                     <span class="about-tag">A Propos d’EDAM Clean</span>
                     <h2>Brillez, on s’occupe du reste</h2>
                     <p>EDAM CLEANest une activité de nettoyage professionnel basée à Cocody,
@@ -60,25 +60,25 @@ environnement de travail.
                 <h2>NOS SERVICES</h2>
             </div>
             <div class="service-overlay-grid">
-                <div class="overlay-card" style="background-image: url('asset/images/chantier.jpg');">
+                <div class="overlay-card" data-reveal="fade-up" data-delay="100" style="background-image: url('asset/images/chantier.jpg');">
                     <div class="card-overlay">
                         <h3>Chantier</h3>
                         <div class="accent-line"></div>
                     </div>
                 </div>
-                <div class="overlay-card" style="background-image: url('asset/images/batim.jpg');">
+                <div class="overlay-card" data-reveal="fade-up" data-delay="200" style="background-image: url('asset/images/batim.jpg');">
                     <div class="card-overlay">
                         <h3>Residentiel</h3>
                         <div class="accent-line"></div>
                     </div>
                 </div>
-                <div class="overlay-card" style="background-image: url('asset/images/bureau.jpg');">
+                <div class="overlay-card" data-reveal="fade-up" data-delay="300" style="background-image: url('asset/images/bureau.jpg');">
                     <div class="card-overlay">
                         <h3>Bureau</h3>
                         <div class="accent-line"></div>
                     </div>
                 </div>
-                <div class="overlay-card" style="background-image: url('asset/images/industrie.jpg');">
+                <div class="overlay-card" data-reveal="fade-up" data-delay="400" style="background-image: url('asset/images/industrie.jpg');">
                     <div class="card-overlay">
                         <h3>Industriel</h3>
                         <div class="accent-line"></div>

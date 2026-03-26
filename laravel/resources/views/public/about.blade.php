@@ -3,7 +3,7 @@
 
     <main>
         <!-- Page Header / Breadcrumb -->
-        <section class="page-header reveal-fade">
+        <section class="page-header" data-reveal="fade-down">
             <div class="container">
                 <h1>A PROPOS DE NOUS</h1>
                 <div class="breadcrumb">
@@ -13,7 +13,7 @@
         </section>
 
         <!-- Who We Are Section -->
-        <section class="section-padding container reveal-up">
+        <section class="section-padding container" data-reveal="fade-up">
             <div class="about-grid">
                 <div class="about-content">
                     <span class="about-tag">Notre Societe</span>
@@ -45,7 +45,7 @@ rigoureux et en proposant des solutions sur mesure.
         <section class="vision-mission-section">
             <div class="container">
                 <!-- Vision -->
-                <div class="vm-row">
+                <div class="vm-row" data-reveal="fade-right">
                     <div class="vm-image">
                         <img src="asset/images/vison.jpg" alt="Vision">
                     </div>
@@ -64,7 +64,7 @@ de ses partenaires et de sa communauté</p>
                 <div class="divider"></div>
 
                 <!-- Mission -->
-                <div class="vm-row">
+                <div class="vm-row" data-reveal="fade-left">
                     <div class="vm-image">
                         <img src="asset/images/mission.jpg" alt="Mission">
                     </div>
@@ -85,32 +85,32 @@ réactivité et satisfaction.
         </section>
 
         <!-- Values Section -->
-        <section class="section-padding container">
+        <section class="section-padding container reveal-up">
             <div class="section-header">
                 <h2>NOS VALEURS</h2>
             </div>
             <div class="values-grid">
-                <div class="value-item">
+                <div class="value-item" data-reveal="fade-up" data-delay="100">
                     <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
                     <h3>INTEGRITE</h3>
                 </div>
-                <div class="value-item">
+                <div class="value-item" data-reveal="fade-up" data-delay="200">
                     <div class="value-icon"><i class="fas fa-star"></i></div>
                     <h3>QUALITE</h3>
                 </div>
-                <div class="value-item">
+                <div class="value-item" data-reveal="fade-up" data-delay="300">
                     <div class="value-icon"><i class="fas fa-bolt"></i></div>
                     <h3>REACTIVITE</h3>
                 </div>
-                <div class="value-item">
+                <div class="value-item" data-reveal="fade-up" data-delay="400">
                     <div class="value-icon"><i class="fas fa-hands-helping"></i></div>
                     <h3>ENGAGEMENT CLIENT</h3>
                 </div>
-                <div class="value-item">
+                <div class="value-item" data-reveal="fade-up" data-delay="500">
                     <div class="value-icon"><i class="fas fa-users"></i></div>
                     <h3>PROFESSIONNALISME</h3>
                 </div>
-                <div class="value-item">
+                <div class="value-item" data-reveal="fade-up" data-delay="600">
                     <div class="value-icon"><i class="fas fa-lock"></i></div>
                     <h3>CONFIANCE</h3>
                 </div>
@@ -124,25 +124,25 @@ réactivité et satisfaction.
                     <h2>NOTRE EQUIPE</h2>
                 </div>
                 <div class="team-grid">
-                    <div class="team-member">
+                    <div class="team-member" data-reveal="zoom-in" data-delay="100">
                         <img src="asset/images/personl.jpg" alt="Directeur Général">
                         <div class="team-member-overlay">
                             <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">Directeur Général</span>
                         </div>
                     </div>
-                    <div class="team-member">
+                    <div class="team-member" data-reveal="zoom-in" data-delay="200">
                         <img src="asset/images/personl.jpg" alt="Chef de Projet">
                         <div class="team-member-overlay">
                             <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">Chef de Projet</span>
                         </div>
                     </div>
-                    <div class="team-member">
+                    <div class="team-member" data-reveal="zoom-in" data-delay="300">
                         <img src="asset/images/personl.jpg" alt="Responsable Technique">
                         <div class="team-member-overlay">
                             <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">Responsable Technique</span>
                         </div>
                     </div>
-                    <div class="team-member">
+                    <div class="team-member" data-reveal="zoom-in" data-delay="400">
                         <img src="asset/images/personl.jpg" alt="Assistante Administrative">
                         <div class="team-member-overlay">
                             <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">Assistante Administrative</span>

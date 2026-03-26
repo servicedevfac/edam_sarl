@@ -13,6 +13,7 @@
         rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
@@ -58,7 +59,7 @@
     @yield('content')
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container" data-reveal="fade-up" data-delay="100">
             <div class="footer-grid">
                 <div class="footer-col footer-about">
                     <h4>A Propos</h4>

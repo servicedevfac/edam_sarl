@@ -2,22 +2,22 @@
 @section('content')
     <main>
         <!-- Gift Hero Section -->
-        <section class="gift-hero reveal-fade">
+        <section class="gift-hero">
             <div class="container">
                 <div class="gift-hero-grid">
-                    <div class="gift-hero-content">
+                    <div class="gift-hero-content" data-reveal="fade-right">
                         <h1>EDAM GIFT</h1>
                         <p>Nous savons comment vous rendre heureux !</p>
                     </div>
-                    <div class="gift-hero-image">
-                        <img src="asset/images/git.png" alt="EDAM Gift Box" height="300" width="300">
+                    <div class="gift-hero-image" data-reveal="zoom-in" data-delay="200">
+                        <img src="asset/images/git.png" alt="EDAM Gift Box" height="100%" width="100%" class="floating" style="position:block; bottom: 20px;" data-reveal="zoom-in" data-delay="200">
                     </div>
                 </div>
             </div>
         </section>
         
         <!-- Intro & Why Choose Us Section -->
-        <section class="section-padding container reveal-up">
+        <section class="section-padding container" data-reveal="fade-up">
             <div class="gift-intro">
                 <h2>Bienvenue à EDAM GIFT</h2>
                 <div class="intro-text">
@@ -40,37 +40,37 @@ de votre événement ou de votre action de communication.</p>
                     <h2>Pourquoi nous choisir ?</h2>
                 </div>
                 <div class="features-grid">
-                    <div class="feature-item">
+                    <div class="feature-item" data-reveal="fade-up" data-delay="100">
                         <div class="feature-number">01</div>
                         <div class="feature-content">
                             <h3>Des paniers cadeaux uniques et personalisés</h3>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-reveal="fade-up" data-delay="200">
                         <div class="feature-number">02</div>
                         <div class="feature-content">
                             <h3>Une organisation d'évènements clé en main</h3>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-reveal="fade-up" data-delay="300">
                         <div class="feature-number">03</div>
                         <div class="feature-content">
                             <h3>Une entreprise locale et de proximité</h3>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-reveal="fade-up" data-delay="100">
                         <div class="feature-number">04</div>
                         <div class="feature-content">
                             <h3>Un accompagnement sur mesure</h3>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-reveal="fade-up" data-delay="200">
                         <div class="feature-number">05</div>
                         <div class="feature-content">
                             <h3>Le sens du detail et de l'elegance</h3>
                         </div>
                     </div>
-                    <div class="feature-item">
+                    <div class="feature-item" data-reveal="fade-up" data-delay="300">
                         <div class="feature-number">06</div>
                         <div class="feature-content">
                             <h3>Respect des délais et engagements</h3>
@@ -81,13 +81,13 @@ de votre événement ou de votre action de communication.</p>
         </section>
 
         <!-- Products Section -->
-        <section class="section-padding container reveal-up">
+        <section class="section-padding container" data-reveal="fade-up">
             <div class="section-header">
                 <h2>Nos Paniers Cadeaux</h2>
             </div>
             <div class="gift-products-grid">
                 <!-- Product 1 -->
-                <div class="gift-card">
+                <div class="gift-card" data-reveal="fade-up" data-delay="100">
                     <div class="gift-card-img">
                         <img src="asset/images/service.png" alt="Panier cadeau">
                     </div>
@@ -97,7 +97,7 @@ de votre événement ou de votre action de communication.</p>
                     </div>
                 </div>
                 <!-- Product 2 -->
-                <div class="gift-card">
+                <div class="gift-card" data-reveal="fade-up" data-delay="200">
                     <div class="gift-card-img">
                         <img src="asset/images/service.png" alt="Panier cadeau">
                     </div>
@@ -107,7 +107,7 @@ de votre événement ou de votre action de communication.</p>
                     </div>
                 </div>
                 <!-- Product 3 -->
-                <div class="gift-card">
+                <div class="gift-card" data-reveal="fade-up" data-delay="300">
                     <div class="gift-card-img">
                         <img src="asset/images/service.png" alt="Panier cadeau">
                     </div>
@@ -117,7 +117,7 @@ de votre événement ou de votre action de communication.</p>
                     </div>
                 </div>
                 <!-- Product 4 -->
-                <div class="gift-card">
+                <div class="gift-card" data-reveal="fade-up" data-delay="400">
                     <div class="gift-card-img">
                         <img src="asset/images/service.png" alt="Panier cadeau">
                     </div>

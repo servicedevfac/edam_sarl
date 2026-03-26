@@ -62,6 +62,15 @@ img {
         width: 100%;
     }
 
+    .hero-img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        z-index: -1;
+    }
+
     .about-grid {
         grid-template-columns: 1fr;
     }
@@ -409,7 +418,7 @@ footer {
 }
 
 .footer-col h4 {
-    font-size: var(--fs-md);
+    font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 25px;
     position: relative;
@@ -780,9 +789,9 @@ footer {
 }
 
 .hero-img {
-    max-width: 110%;
     height: auto;
     filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.2));
+
 }
 
 /* Bubble Animation */
@@ -982,7 +991,7 @@ footer {
 }
 
 .step-box h4 {
-    font-size: var(--fs-lg);
+    font-size: 20px;
     margin-bottom: 15px;
     line-height: 1.2;
 }
@@ -1374,6 +1383,7 @@ footer {
     gap: 15px;
     transition: var(--transition);
     border: 1px solid #eee;
+    height: 100px;
 }
 
 .contact-card:hover {
@@ -1383,8 +1393,8 @@ footer {
 }
 
 .card-icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background: var(--primary-blue);
     color: var(--white);
     border-radius: 50%;
@@ -1393,6 +1403,7 @@ footer {
     justify-content: center;
     font-size: var(--fs-lg);
     flex-shrink: 0;
+    
 }
 
 .card-text h3 {
@@ -2119,48 +2130,75 @@ tr.unread td {
 }
 
 
-/* Global Reveal Animations */
-.reveal-fade,
-.reveal-up,
-.reveal-left,
-.reveal-right {
+/* --- Premium Scroll Reveal System --- */
+/* --- Premium Scroll Reveal System --- */
+[data-reveal] {
     opacity: 0;
-    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1),
+        opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
     will-change: transform, opacity;
 }
 
-.reveal-up {
+[data-reveal="fade-up"] {
     transform: translateY(40px);
 }
 
-.reveal-left {
+[data-reveal="fade-down"] {
+    transform: translateY(-40px);
+}
+
+[data-reveal="fade-left"] {
     transform: translateX(-40px);
 }
 
-.reveal-right {
+[data-reveal="fade-right"] {
     transform: translateX(40px);
 }
 
-.revealed {
+[data-reveal="zoom-in"] {
+    transform: scale(0.95);
+}
+
+[data-reveal="rotate-in"] {
+    transform: rotate(-3deg) scale(0.95);
+}
+
+[data-reveal].revealed {
     opacity: 1;
-    transform: translate(0, 0) !important;
+    transform: translate(0, 0) scale(1) rotate(0);
 }
 
 /* Staggered Delay Utilities */
-.delay-1 {
-    transition-delay: 0.1s;
+[data-delay="100"] {
+    transition-delay: 100ms;
 }
 
-.delay-2 {
-    transition-delay: 0.2s;
+[data-delay="200"] {
+    transition-delay: 200ms;
 }
 
-.delay-3 {
-    transition-delay: 0.3s;
+[data-delay="300"] {
+    transition-delay: 300ms;
 }
 
-.delay-4 {
-    transition-delay: 0.4s;
+[data-delay="400"] {
+    transition-delay: 400ms;
+}
+
+[data-delay="500"] {
+    transition-delay: 500ms;
+}
+
+[data-delay="600"] {
+    transition-delay: 600ms;
+}
+
+[data-delay="700"] {
+    transition-delay: 700ms;
+}
+
+[data-delay="800"] {
+    transition-delay: 800ms;
 }
 
 /* Header Scrolled State */
@@ -2185,6 +2223,38 @@ header.header-scrolled .logo img {
 
 .card-img img {
     transition: var(--transition);
+}
+
+/* Floating Animation for "Bougeant" feel */
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+/* Enhanced Hover Effects */
+.service-card:hover,
+.gift-card:hover,
+.overlay-card:hover {
+    transform: translateY(-15px) scale(1.02) !important;
+    box-shadow: 0 20px 40px rgba(33, 150, 243, 0.2) !important;
+}
+
+.about-image img:hover {
+    transform: scale(1.03);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* --- Responsive & Mobile Menu Styles --- */
