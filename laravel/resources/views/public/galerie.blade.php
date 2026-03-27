@@ -2,7 +2,7 @@
 @section('content')
     <main>
         <!-- Gallery Hero -->
-        <section class="gallery-hero">
+        <section class="gallery-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/gall.jpg') }}');">
             <div class="container">
                     <h1>GALERIE PHOTOS</h1>
                     <div class="breadcrumb">
@@ -32,12 +32,12 @@
                   
             </div>
         </section>
-        <section class="partners-ribbon">
+        <section class="partners-ribbon" style="margin-top: 20px; margin-bottom: 20px;" data-reveal="fade-up">
             <div class="container-fluid partners-flex" style="display:flex; justify-content:space-evenly; align-items:center; width:100%;">
                 <i><a href="https://wadi-ci.com/home/"><img src="asset/images/image.png" alt="" height="80px" width="80px"></a></i>
                 <i><a href="#"><img src="asset/images/image1.png" alt="" height="80px" width="80px"></a></i>
                 <i><a href="https://www.attouco.com/"><img src="asset/images/image2.png" alt="" height="80px" width="100px"></a></i>
-                <i><a href="#"><img src="asset/images/image3.png" alt="" height="80px" width="80px"></a></i>
+                <i><a href="#"><img src="asset/images/image3.png" alt="" height="80px" width="100px"></a></i>
             </div>
         </section>
 

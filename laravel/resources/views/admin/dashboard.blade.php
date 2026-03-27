@@ -15,7 +15,7 @@
                 </div>
                 <div class="profile-info">
                     <img src="asset/images/personl.jpg" alt="Admin">
-                    <span>Admin EDAM</span>
+                    <h5>Admin EDAM</h5>
                 </div>
             </div>
         </header>

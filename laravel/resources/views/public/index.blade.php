@@ -1,4 +1,38 @@
 @extends('layouts.public.haeder')
+
+@push('styles')
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+@endpush
+
+@push('scripts')
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper('.services-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: { slidesPerView: 1.5 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                    1440: { slidesPerView: 4 }
+                }
+            });
+        });
+    </script>
+@endpush
+
 @section('content')
     <main>
         <!-- Hero Slider Section -->
@@ -6,7 +40,7 @@
             <div class="slides-container">
                 <!-- Slide 1 -->
                 <div class="slide active"
-                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/vison.jpg') }}');">
+                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/sarl.jpg') }}');">
                     <div class="container">
                         <div class="hero-content" style="color: white;">
                             <h1 class="animate__animated animate__fadeInDown" style="font-size: 40px;">EDAM SARL – Votre Vision, Notre Mission</h1>
@@ -18,7 +52,7 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="slide "
-                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/bureau.jpg') }}');">
+                    style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/resi.jpg') }}');">
                     <div class="container">
                         <div class="hero-content" style="color: white;">
                             <h1 style="font-size: 40px;">EDAM CLEAN – Propreté Irréprochable</h1>
@@ -31,7 +65,7 @@
                 </div>
                 <!-- Slide 3 -->
                  <div class="slide"
-                    style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/chantier.jpg') }}');">
+                    style="background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('{{ asset('asset/images/gft1.jpg') }}'); ">
                     <div class="container">
                         <div class="hero-content" style="color: white;">
                             <h1 style="font-size: 40px;">EDAM GIFT – Émotion & Créativité</h1>
@@ -69,7 +103,7 @@
                     <a href="/about" class="btn btn-primary btn-small">Lire Plus</a>
                 </div>
                 <div class="about-image" data-reveal="fade-left">
-                    <img src="{{ asset('asset/images/ec62939e1e0730a960df138eae1812a06dd41603.jpg') }}" alt="Team working" style="max-width: 100%;">
+                    <img src="{{ asset('asset/images/index1.jpg') }}" alt="Team working" style="max-width: 100%;">
                 </div>
             </div>
         </section>
@@ -97,39 +131,93 @@
                 </div>
             </div>
         </section>
-
         <!-- Services Section -->
-        <section class="section-padding services-section" data-reveal="fade-up" style="margin:0 20px 0 20px">
+        <section class="services-section">
             <div class="container">
-                <div class="section-header">
-                    <h2>Nos Services</h2>
+                <div class="section-header" style="text-align: center; justify-content: center; align-items: center;" data-reveal="fade-up" data-delay="100">
+                    <h2>NOS SERVICES</h2>
+                    
                 </div>
-                <div class="services-grid">
-                    <div class="service-card" data-reveal="fade-up" data-delay="100">
-                        <div class="card-img card-clean" data-reveal="zoom-in" data-delay="200">
-                            <img src="asset/images/service1.png" alt="EDAM Clean" class="floating">
-
-                            <div class="card-title" style="color: white;">
-                                <h3>EDAM Clean</h3>
-                            </div>
-                        </div>
-                        <div class="card-content">
-                            <a href="#" class="btn btn-primary btn-small">Voir les details</a>
+            </div>  
+            <div class="swiper services-swiper reveal-up">
+                <div class="swiper-wrapper">
+                    <!-- Service Slide 1 -->
+                    <div class="swiper-slide" data-reveal="zoom-in" data-delay="100">
+                        <div class="service-card-new edu">
+                            <div class="card-icon-new"><i class="fas fa-briefcase"></i></div>
+                            <h3>Nettoyage professionnel</h3>
+                            <ul>
+                                <li>Nettoyage industriel et résidentiel de haute qualité pour tous vos espaces.</li>
+                                <li>Utilisation de produits écologiques et de techniques avancées de désinfection.</li>
+                            </ul>
+                            
                         </div>
                     </div>
-                    <div class="service-card" data-reveal="fade-up" data-delay="300">
-                        <div class="card-img card-gift" data-reveal="zoom-in" data-delay="400">
-                            <img src="asset/images/service.png" alt="EDAM Gift" class="floating">
+                    <!-- Service Slide 2 -->
+                    <div class="swiper-slide " data-reveal="zoom-in" data-delay="100">
+                        <div class="service-card-new net" >
+                            <div class="card-icon-new"><i class="fas fa-couch"></i></div>
+                            <h3>Décoration intérieur</h3>
+                            <ul>
+                                <li>Aménagement d'espaces personnalisés alliant esthétique et fonctionnalité.</li>
+                                <li>Conseils en design et choix de matériaux premium pour votre intérieur.</li>
+                            </ul>
+                            
                         </div>
-                        <div class="card-content">
-                            <a href="#" class="btn btn-primary btn-small">Voir le site</a>
+                    </div>
+                    <!-- Service Slide 3 -->
+                    <div class="swiper-slide" data-reveal="zoom-in" data-delay="100">
+                        <div class="service-card-new it">
+                            <div class="card-icon-new"><i class="fas fa-calendar-check"></i></div>
+                            <h3>Organisation d'évènements</h3>
+                            <ul>
+                                <li>Planification complète de vos évènements corporatifs et privés.</li>
+                                <li>Gestion logistique et coordination pour une expérience mémorable.</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <!-- Service Slide 4 -->
+                    <div class="swiper-slide" data-reveal="zoom-in" data-delay="100">
+                        <div class="service-card-new edu">
+                            <div class="card-icon-new"><i class="fas fa-tools"></i></div>
+                            <h3>Fourniture d'équipements</h3>
+                            <ul>
+                                <li>Vente et installation d'équipements spécialisés pour divers secteurs.</li>
+                                <li>Service après-vente et maintenance garantis pour votre matériel.</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <!-- Service Slide 5 -->
+                    <div class="swiper-slide" data-reveal="zoom-in" data-delay="100">
+                        <div class="service-card-new net">
+                            <div class="card-icon-new"><i class="fas fa-ship"></i></div>
+                            <h3>Import Export</h3>
+                            <ul>
+                                <li>Solutions de transport international et logistique transfrontalière.</li>
+                                <li>Gestion douanière et optimisation de votre chaîne d'approvisionnement.</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    <!-- Service Slide 6 -->
+                    <div class="swiper-slide" data-reveal="zoom-in" data-delay="100">
+                        <div class="service-card-new it">
+                            <div class="card-icon-new"><i class="fas fa-chart-pie"></i></div>
+                            <h3>Conseil & Stratégie</h3>
+                            <ul>
+                                <li>Accompagnement stratégique pour le développement de votre entreprise.</li>
+                                <li>Analyse de marché et optimisation de vos processus opérationnels.</li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
+                <!-- Pagination Dots -->
+                <div class="swiper-pagination"></div>
             </div>
-        </section>
-
-        <!-- Partners Ribbons -->
+        </section>        <!-- Partners Ribbons -->
         <section class="partners-ribbon">
             <div class="container-fluid partners-flex" style="display:flex; justify-content:space-evenly; align-items:center; width:100%;">
                 <i><a href="https://wadi-ci.com/home/"><img src="asset/images/image.png" alt="" height="80px" width="80px"></a></i>
@@ -143,7 +231,7 @@
         <section class="section-padding container" data-reveal="fade-up">
             <div class="about-grid">
                 <div class="about-image" data-reveal="fade-right">
-                    <img src="asset/images/1a9b30e45b5f6677ae76bacfb996aa37031d45a6.jpg" alt="Hands together" height="500px">
+                    <img src="asset/images/index2.jpg" alt="Hands together">
                 </div>
                 <div class="about-content" data-reveal="fade-left">
                     <h2>Pourquoi nous choisir ?</h2>

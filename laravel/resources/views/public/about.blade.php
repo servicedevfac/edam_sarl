@@ -36,7 +36,7 @@ rigoureux et en proposant des solutions sur mesure.
                     <a href="#" class="btn btn-primary  btn-small">Contactez-nous</a>
                 </div>
                 <div class="about-image">
-                    <img src="asset/images/6fae210c200b41557e08526a547f092ff426249c.jpg" alt="Team collaborating">
+                    <img src="asset/images/about1.jpg" alt="Team collaborating">
                 </div>
             </div>
         </section>
@@ -86,7 +86,7 @@ réactivité et satisfaction.
 
         <!-- Values Section -->
         <section class="section-padding container reveal-up">
-            <div class="section-header">
+            <div class="section-header" style="text-align: center; justify-content: center; align-items: center;">
                 <h2>NOS VALEURS</h2>
             </div>
             <div class="values-grid">
@@ -120,7 +120,7 @@ réactivité et satisfaction.
         <!-- Team Section -->
         <section class="team-section section-padding reveal-up">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" style="text-align: center; justify-content: center; align-items: center; margin-bottom: 2rem;" >
                     <h2>NOTRE EQUIPE</h2>
                 </div>
                 <div class="team-grid">

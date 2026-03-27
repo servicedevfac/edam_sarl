@@ -18,9 +18,7 @@ Route::get('/edam-clean', function () {
     return view('public.edam-clean');
 });
 
-Route::get('/edam_gift', function () {
-    return view('public.edam_gift');
-});
+Route::get('/edam_gift', [App\Http\Controllers\ProduitController::class, 'publicIndex'])->name('public.edam_gift');
 Route::get('/galerie', [GallerieController::class, 'galerie']);
 Route::get('/contact', function () {
     return view('public.contact');
@@ -43,8 +41,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/devis/export', [DevisController::class, 'export'])->name('devis.export');
     route::resource('galleries', GallerieController::class);
     route::resource('messages', MessageController::class);
-
-
+    route::resource('produits', App\Http\Controllers\ProduitController::class);
 });
 
 

@@ -14,6 +14,7 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    @stack('styles')
 </head>
 
 <body>
@@ -22,12 +23,31 @@
     <div class="top-bar">
         <div class="container">
             <div class="top-info">
-                <span><i class="fas fa-map-marker-alt"></i> Angré Djorogobité I non loin  du restaurant The BRIDGE</span>
+                <span><i class="fas fa-map-marker-alt"></i> Angré Djorogobité I non loin  du restaurant The BRIDGE LOUNGE</span>
             </div>
-            <div class="top-social">
-                <a href="https://www.facebook.com/profile.php?id=61577193561934"><i class="fab fa-facebook-f"></i></a>
-                <a href="http://www.instagram.com/edam.clean"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.tiktok.com/@edam.clean"><i class="fab fa-tiktok"></i></a>
+            <div class="social-dropdown">
+                <div class="social-dropdown-btn">
+                    <span>Nos Réseaux</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="social-dropdown-content">
+                    <div class="dropdown-group">
+                        <h5>EDAM Clean</h5>
+                        <div class="dropdown-group-icons">
+                            <a href="https://www.facebook.com/profile.php?id=61577193561934" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="http://www.instagram.com/edam.clean" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@edam.clean" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="dropdown-groupgift">
+                        <h5>EDAM Gift</h5>
+                        <div class="dropdown-group-iconsgift">
+                            <a href="https://www.facebook.com/profile.php?id=61580002526478" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="http://www.instagram.com/edam.gift" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@edam.gift8" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -90,13 +110,13 @@ solutions fiables et adaptées pour particuliers et entreprises.</p>
                         <li><i class="fas fa-phone"></i>  +225 27 22 29 75 08</li>
                         <li><i class="fas fa-phone"></i>  +225 07 16 48 04 55</li>
                         <li><i class="fas fa-envelope"></i> infos@edamsarl.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Angré Djorogobité I non loin du restaurant The BRIDGE</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Angré Djorogobité I non loin du restaurant The BRIDGE LOUNGE</li>
                         <li><i class="fas fa-clock"></i> Lun-Ven: 08H00 - 17H00</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 EDAM SARL Tous droits réservés. Designé par FIRME ATTOU & CO
+                &copy; 2026 EDAM SARL Tous droits réservés. Designé par <a href="https://www.attouco.com/">FIRME ATTOU & CO</a>
             </div>
         </div>
     </footer>
@@ -133,6 +153,7 @@ solutions fiables et adaptées pour particuliers et entreprises.</p>
         });
     </script>
     <script src="{{ asset('asset/js/script.js') }}"></script>
+    @stack('scripts')
 </body>
 
 </html>

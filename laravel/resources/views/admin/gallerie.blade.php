@@ -22,7 +22,7 @@
     <div class="admin-content">
         <div class="admin-container">
             <div class="page-title-row">
-                <h1>Galeries d'images</h1>
+                <h4>Galeries d'images</h4>
                 <a href="{{ route('galleries.create') }}" class="btn btn-primary btn-small"><i class="fas fa-plus"></i> Ajouter une image</a>
             </div>
 

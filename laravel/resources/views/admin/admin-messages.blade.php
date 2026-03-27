@@ -28,7 +28,7 @@
         <div class="admin-content">
             <div class="admin-container">
                 <div class="page-title-row">
-                    <h1>Tous les Messages Contact</h1>
+                    <h4>Tous les Messages Contact</h4>
                     <div class="header-actions">
                         <form action="{{ route('messages.markAllRead') }}" method="POST"
                             onsubmit="return confirm('Êtes-vous sûr de vouloir marquer tous les messages comme lus ?');">

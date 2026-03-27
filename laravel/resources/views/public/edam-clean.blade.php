@@ -33,7 +33,7 @@
         <section class="section-padding container reveal-up">
             <div class="about-clean-grid">
                 <div class="about-clean-image reveal-left">
-                    <img src="asset/images/about-clean.png" alt="Nettoyage EDAM Clean">
+                    <img src="asset/images/clean1.jpg" alt="Nettoyage EDAM Clean">
                 </div>
                 <div class="about-clean-content reveal-right">
                     <span class="about-tag">A Propos d’EDAM Clean</span>
@@ -56,29 +56,29 @@ environnement de travail.
 
         <!-- Services Grid Section -->
         <section class="section-padding container">
-            <div class="section-header">
+            <div class="section-header" style="text-align: center; justify-content: center; align-items: center;">
                 <h2>NOS SERVICES</h2>
             </div>
             <div class="service-overlay-grid">
-                <div class="overlay-card" data-reveal="fade-up" data-delay="100" style="background-image: url('asset/images/chantier.jpg');">
+                <div class="overlay-card" data-reveal="fade-up" data-delay="100" style="background-image: url('asset/images/chantier.png');">
                     <div class="card-overlay">
                         <h3>Chantier</h3>
                         <div class="accent-line"></div>
                     </div>
                 </div>
-                <div class="overlay-card" data-reveal="fade-up" data-delay="200" style="background-image: url('asset/images/batim.jpg');">
+                <div class="overlay-card" data-reveal="fade-up" data-delay="200" style="background-image: url('asset/images/resi.jpg');">
                     <div class="card-overlay">
                         <h3>Residentiel</h3>
                         <div class="accent-line"></div>
                     </div>
                 </div>
-                <div class="overlay-card" data-reveal="fade-up" data-delay="300" style="background-image: url('asset/images/bureau.jpg');">
+                <div class="overlay-card" data-reveal="fade-up" data-delay="300" style="background-image: url('asset/images/bureaux.jpg');">
                     <div class="card-overlay">
                         <h3>Bureau</h3>
                         <div class="accent-line"></div>
                     </div>
                 </div>
-                <div class="overlay-card" data-reveal="fade-up" data-delay="400" style="background-image: url('asset/images/industrie.jpg');">
+                <div class="overlay-card" data-reveal="fade-up" data-delay="400" style="background-image: url('asset/images/industri.jpg');">
                     <div class="card-overlay">
                         <h3>Industriel</h3>
                         <div class="accent-line"></div>
@@ -90,7 +90,7 @@ environnement de travail.
         <!-- Methodology Section -->
         <section class="methodology-section section-padding reveal-up">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" style="text-align: center; justify-content: center; align-items: center;">
                     <h2>NOTRE METHODOLOGIE</h2>
                 </div>
                 <div class="methodology-grid">
@@ -135,20 +135,21 @@ satisfaction.</p>
 
         <!-- Quote Form Section -->
         <section class="section-padding container reveal-up">
-            <div class="section-header">
+            <div class="section-header" style="text-align: center; justify-content: center; align-items: center;">
                 <h2>AVEZ-VOUS BESOIN D’UN SERVICE DE NETTOYAGE ?</h2>
                 <p>Veuillez remplir ce formulaire de devis</p>
             </div>
-            @if(session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-            @endif
-            @if(session('error'))
-                <div class="alert alert-error">
-                    {{ session('error') }}
-                </div>
-            @endif  
+                @if (session('success'))
+                    <div class="alert alert-success" style="background: #10b981; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 20px;"  >
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                @if (session('error'))
+                    <div class="alert alert-error" style="background: #ef4444; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 20px;"  >
+                        {{ session('error') }}
+                    </div>
+                @endif
             <form class="quote-form" action="{{ route('devis.store') }}" method="POST">
                 @csrf
                 <div class="form-grid">

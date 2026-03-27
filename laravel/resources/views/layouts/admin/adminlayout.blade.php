@@ -22,7 +22,7 @@
         <aside class="admin-sidebar">
             <div class="sidebar-header">
                 <img src="{{asset('asset/images/logo.png')}}" alt="Logo">
-                <h3>Admin Panel</h3>
+                <h4>Admin Panel</h4>
             </div>
             <nav class="sidebar-nav">
                 <ul>
@@ -32,6 +32,7 @@
                     </li>
                     <li><a href="{{route('messages.index')}}"><i class="fas fa-envelope"></i> Messages</a></li>
                     <li><a href="{{route('galleries.index')}}"><i class="fas fa-images"></i> Galerie</a></li>
+                    <li><a href="{{route('produits.index')}}"><i class="fas fa-gifts"></i> Produits (Gift)</a></li>
                     <li><a href="/"><i class="fas fa-external-link-alt"></i> Voir le site</a></li>
                 </ul>
             </nav>
