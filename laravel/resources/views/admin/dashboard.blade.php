@@ -22,7 +22,7 @@
 
         <div class="admin-content">
             <div class="admin-container">
-                <h1>Tableau de Bord</h1>
+                <h4>Tableau de Bord</h4>
 
                 <!-- Stats Grid -->
                 <div class="admin-stats-grid">
@@ -31,7 +31,7 @@
                             <i class="fas fa-file-invoice-dollar"></i>
                         </div>
                         <div class="stat-details">
-                            <h3>{{ $newDevisCount }}</h3>
+                            <h4>{{ $newDevisCount }}</h4>
                             <p>Nouveaux Devis</p>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="stat-details">
-                            <h3>{{ $unreadMessagesCount }}</h3>
+                            <h4>{{ $unreadMessagesCount }}</h4>
                             <p>Messages Non Lus</p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                             <i class="fas fa-check-circle"></i>
                         </div>
                         <div class="stat-details">
-                            <h3>{{ $responseRate }}%</h3>
+                            <h4>{{ $responseRate }}%</h4>
                             <p>Taux de Réponse</p>
                         </div>
                     </div>
@@ -60,7 +60,7 @@
                     <!-- Devis Table -->
                     <div class="admin-table-card" id="quotes">
                         <div class="card-header">
-                            <h2>Devis Récents</h2>
+                            <h4>Devis Récents</h4>
                             <a href="{{ route('devis.index') }}" class="btn-link">Voir tout</a>
                         </div>
                         <div class="table-responsive">
@@ -108,7 +108,7 @@
                     <!-- Messages Table -->
                     <div class="admin-table-card" id="messages">
                         <div class="card-header">
-                            <h2>Messages Contact</h2>
+                            <h4>Messages Contact</h4>
                             <a href="{{ route('messages.index') }}" class="btn-link">Voir tout</a>
                         </div>
                         <div class="table-responsive">

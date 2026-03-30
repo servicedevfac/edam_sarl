@@ -4,84 +4,111 @@ namespace App\Http\Controllers;
 
 use App\Models\Gallerie;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 
 class GallerieController extends Controller
 {
-    public function galerie()
+    /**
+     * Display a listing of the resource for the public.
+     */
+    public function publicIndex()
     {
-        $galleries = Gallerie::latest()->paginate(6);
+        $galleries = Gallerie::latest()->paginate(9);
         return view('public.galerie', compact('galleries'));
     }
 
+    /**
+     * Display a listing of the resource for admin.
+     */
     public function index()
     {
         $galleries = Gallerie::latest()->paginate(10);
-        return view('admin.gallerie', compact('galleries'));
+        return view('admin.galleries.index', compact('galleries'));
     }
 
+    /**
+     * Show the form for creating a new resource.
+     */
     public function create()
     {
-        return view('admin.creategallerie');
+        return view('admin.galleries.create');
     }
 
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(Request $request)
     {
         $request->validate([
             'titre' => 'required|string|max:255',
-            'image' => 'required|image|mimes:jpg,jpeg,png,webp|max:2048'
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        $imagePath = $request->file('image')->store('galleries', 'public');
+        $imageName = time() . '.' . $request->image->extension();
+        $request->image->move(public_path('images/gallery'), $imageName);
+        $imagePath = 'images/gallery/' . $imageName;
 
         Gallerie::create([
             'titre' => $request->titre,
-            'image' => $imagePath
+            'image' => $imagePath,
         ]);
 
         return redirect()->route('galleries.index')
-            ->with('success', 'Galerie ajoutée avec succès');
+            ->with('success', 'Image ajoutée à la galerie avec succès.');
     }
 
-    public function edit(Gallerie $gallerie)
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(Gallerie $gallery)
     {
-        return view('admin.creategallerie', compact('gallerie'));
+        return view('admin.galleries.edit', compact('gallery'));
     }
 
-    public function update(Request $request, Gallerie $gallerie)
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, Gallerie $gallery)
     {
         $request->validate([
             'titre' => 'required|string|max:255',
-            'image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048'
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        if ($request->hasFile('image')) {
+        $imagePath = $gallery->image;
 
-            // Supprimer ancienne image
-            if ($gallerie->image && Storage::disk('public')->exists($gallerie->image)) {
-                Storage::disk('public')->delete($gallerie->image);
+        if ($request->hasFile('image')) {
+            // Delete old image
+            if (File::exists(public_path($gallery->image))) {
+                File::delete(public_path($gallery->image));
             }
 
-            $imagePath = $request->file('image')->store('galleries', 'public');
-            $gallerie->image = $imagePath;
+            $imageName = time() . '.' . $request->image->extension();
+            $request->image->move(public_path('images/gallery'), $imageName);
+            $imagePath = 'images/gallery/' . $imageName;
         }
 
-        $gallerie->titre = $request->titre;
-        $gallerie->save();
+        $gallery->update([
+            'titre' => $request->titre,
+            'image' => $imagePath,
+        ]);
 
         return redirect()->route('galleries.index')
-            ->with('success', 'Galerie modifiée avec succès');
+            ->with('success', 'Galerie mise à jour avec succès.');
     }
 
-    public function destroy(Gallerie $gallerie)
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Gallerie $gallery)
     {
-        if ($gallerie->image && Storage::disk('public')->exists($gallerie->image)) {
-            Storage::disk('public')->delete($gallerie->image);
+        if (File::exists(public_path($gallery->image))) {
+            File::delete(public_path($gallery->image));
         }
 
-        $gallerie->delete();
+        $gallery->delete();
 
         return redirect()->route('galleries.index')
-            ->with('success', 'Galerie supprimée avec succès');
+            ->with('success', 'Image supprimée de la galerie.');
     }
 }

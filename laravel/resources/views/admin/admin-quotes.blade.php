@@ -31,8 +31,7 @@
             <div class="admin-container">
                 <div class="page-title-row">
                     <h4>Tous les Devis Reçus</h4>
-                    <a href="{{ route('devis.export') }}" class="btn btn-primary btn-small"><i class="fas fa-download"></i>
-                        Exporter CSV</a>
+                  
                 </div>
 
                 <div class="admin-table-card">

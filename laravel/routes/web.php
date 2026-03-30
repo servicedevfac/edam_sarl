@@ -19,7 +19,7 @@ Route::get('/edam-clean', function () {
 });
 
 Route::get('/edam_gift', [App\Http\Controllers\ProduitController::class, 'publicIndex'])->name('public.edam_gift');
-Route::get('/galerie', [GallerieController::class, 'galerie']);
+Route::get('/galerie', [GallerieController::class, 'publicIndex'])->name('public.galerie');
 Route::get('/contact', function () {
     return view('public.contact');
 });

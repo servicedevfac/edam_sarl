@@ -23,7 +23,7 @@
         <div class="admin-content">
             <div class="admin-container">
                 <div class="page-title-row">
-                    <h1>Détails du Devis #{{ $devis->id }}</h1>
+                    <h4>Détails du Devis #{{ $devis->id }}</h4>
                     <a href="{{ route('devis.index') }}" class="btn btn-primary btn-small">
                         <i class="fas fa-arrow-left"></i> Retour à la liste
                     </a>

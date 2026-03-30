@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="dropdown-groupgift">
-                        <h5>EDAM Gift</h5>
+                        <h5 style="color: #ff71b8ff;">EDAM Gift</h5>
                         <div class="dropdown-group-iconsgift">
                             <a href="https://www.facebook.com/profile.php?id=61580002526478" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="http://www.instagram.com/edam.gift" title="Instagram"><i class="fab fa-instagram"></i></a>

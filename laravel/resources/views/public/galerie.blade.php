@@ -15,20 +15,25 @@
         <section class="section-padding container" data-reveal="fade-up">
             <div class="container">
                 <div class="gallery-grid">
-                  @foreach ($galleries as $gallery)
-                  <div class="gallery-item" data-reveal="zoom-in">
-                      <img src="{{ asset('images/' . $gallery->image) }}" alt="{{ $gallery->titre }}">
-                      <div class="gallery-overlay">
-                          <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">{{ $gallery->titre }}</span>
-                      </div>
-                  </div>
-                  @endforeach
-                    
+                    @forelse ($galleries as $gallery)
+                    <div class="gallery-item" data-reveal="zoom-in" data-delay="{{ $loop->index * 100 }}">
+                        <img src="{{ asset($gallery->image) }}" alt="{{ $gallery->titre }}">
+                        <div class="gallery-overlay">
+                            <span style="font-size: var(--fs-lg); font-weight: 700; text-transform: uppercase; text-align: center; color: var(--white);">{{ $gallery->titre }}</span>
+                        </div>
+                    </div>
+                    @empty
+                        <div style="grid-column: 1 / -1; text-align: center; padding: 40px; background: #fff; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                            <p style="font-size: 1.2rem; color: #666;">Aucune image disponible dans la galerie pour le moment.</p>
+                        </div>
+                    @endforelse
                 </div>
                 <!-- Pagination -->
-                <div class="gallery-pagination">
-                    {{ $galleries->links('pagination::bootstrap-4') }}
-                </div>
+                @if($galleries->hasPages())
+                    <div class="gallery-pagination" style="margin-top: 40px;">
+                        {{ $galleries->links() }}
+                    </div>
+                @endif
                   
             </div>
         </section>
