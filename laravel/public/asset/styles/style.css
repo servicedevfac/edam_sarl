@@ -2662,7 +2662,14 @@ header.header-scrolled .mobile-menu-toggle {
 
     }
 
-
+.about-content-flex {
+    flex-direction: column;
+}
+@media (max-width: 450px) {
+    .about-content-flex {
+        flex-direction: row;
+    }
+}   
 
     .stats-grid {
         grid-template-columns: 1fr;

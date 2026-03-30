@@ -245,7 +245,7 @@
                         des résultats à la hauteur de vos attentes. Que ce soit pour la fourniture
                         d’équipements, le nettoyage, la décoration ou l’organisation d’événements,
                         nous vous accompagnons avec professionnalisme à chaque étape.
-                        <div style="display: flex; flex-direction: row; gap: 20px;justify-content: space-between;">
+                        <div class="about-content-flex" style="display: flex; flex-direction: row; gap: 20px;justify-content: space-between;">
                         <div style="display: flex; flex-direction: column; gap: 10px;">
                             <div style="display: flex; align-items: center; gap: 10px;">
                                 <img src="https://img.icons8.com/?size=100&id=123575&format=png&color=2196F3" alt="" height="20" width="20">

@@ -96,8 +96,8 @@ de votre événement ou de votre action de communication.</p>
                             <div class="gift-card-info">
                                 <h4>{{ Str::limit($produit->nom, 15, '...') }}</h4>
                                 <p>{{ number_format($produit->prix, 0, ',', ' ') }} FCFA</p>
-                                <a href="https://wa.me/2250747238135?text=Bonjour%20je%20suis%20interesse%20par%20ce%20produit"class="btn btn-gift target="_blank">
-                                        Commander sur WhatsApp
+                                <a href="https://wa.me/2250747238135?text=Bonjour%20je%20veux%20commander%20le%20produit%20{{ urlencode($produit->nom) }}" target="_blank" class="btn btn-gift">
+                                    Commander
                                 </a>
                             </div>
                         </div>
