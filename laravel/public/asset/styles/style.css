@@ -1361,8 +1361,7 @@ footer {
     padding: 20px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transition: var(--transition);
-    height: 450px; /* Fixed height for gift cards */
+    transition: var(--transition); 
     display: flex;
     flex-direction: column;
 }
@@ -1384,17 +1383,16 @@ footer {
 
 .gift-card-info h3  {
     font-size: 20px;
-    margin-bottom: 20px;
     color: var(--dark-blue);
     margin-bottom: 10px;
 }
 
 .gift-card-info p  {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 20px;
     font-weight: 600;
     color: #f48fb1;
-    margin-bottom: 10px;
+   
 }
 
 .btn-gift {
