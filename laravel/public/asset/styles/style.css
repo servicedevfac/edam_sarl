@@ -2369,6 +2369,13 @@ tr.unread td {
         font-size: 40px;
     }
 }
+@media (max-width: 450px) {
+    .hero-slider h1 {
+        font-size: 25px;
+
+
+    }   
+}
 @media (max-width: 375px) {
     .hero-slider h1 {
         font-size: 20px;
@@ -2377,6 +2384,7 @@ tr.unread td {
         padding-top: 0px;
         padding-left: 50px;
     }
+
 }
 
 
@@ -2632,7 +2640,9 @@ header.header-scrolled .mobile-menu-toggle {
         font-size: 40px !important;
         line-height: 1.2;
     }
-    @media (max-width: 375px) {
+
+
+    @media (max-width: 450px) {
         .hero-slider .hero-content h1 {
             font-size: 25px !important;
             line-height: 1.2;
