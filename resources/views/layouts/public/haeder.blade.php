@@ -97,12 +97,12 @@ solutions fiables et adaptées pour particuliers et entreprises.</p>
                 <div class="footer-col">
                     <h4>Liens Rapides</h4>
                     <ul class="footer-links">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">A Propos</a></li>
-                        <li><a href="edan-clean.html">EDAM Clean</a></li>
-                        <li><a href="edam_gift.html">EDAM Gift</a></li>
-                        <li><a href="galerie.html">Galerie</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="/">Accueil</a></li>
+                        <li><a href="/about">A Propos</a></li>
+                        <li><a href="/edam-clean">EDAM Clean</a></li>
+                        <li><a href="/edam_gift">EDAM Gift</a></li>
+                        <li><a href="/galerie">Galerie</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
