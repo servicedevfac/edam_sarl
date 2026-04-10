@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDAM SARL – Excellence & Professionnalisme</title>
+    <meta name="description" content="@yield('meta-description', 'Firme Attou Co,')"/>
+    <meta name="keywords" content="@yield('meta-description', 'Firme Attou Co')"/>,
+    <title>@yield('title') | EDAM SARL </title>
     <link rel="icon" type="image/png" href="{{ asset('asset/images/logo.png') }}">
     <link rel="stylesheet" href="{{ asset('asset/styles/style.css') }}">
     <!-- Google Fonts -->
@@ -57,19 +59,19 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="/">
+                <a href="{{ route('accueil') }}">
                     <img src="asset/images/logo.png" alt="EDAM SARL Logo">
                 </a>
             </div>
             <nav id="main-nav">
                 <ul>
-                    <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">Accueil</a></li>
-                    <li><a href="/about" class="{{ request()->is('about') ? 'active' : '' }}">A Propos</a></li>
-                    <li><a href="/edam-clean" class="{{ request()->is('edam-clean') ? 'active' : '' }}">EDAM Clean</a>
+                    <li><a href="{{ route('accueil') }}" class="{{ request()->is('/') ? 'active' : '' }}">Accueil</a></li>
+                    <li><a href="{{ route('apropos') }}" class="{{ request()->is('a-propos') ? 'active' : '' }}">A Propos</a></li>
+                    <li><a href="{{ route('edam-clean') }}" class="{{ request()->is('edam-clean') ? 'active' : '' }}">EDAM Clean</a>
                     </li>
-                    <li><a href="/edam_gift" class="{{ request()->is('edam_gift') ? 'active' : '' }}">EDAM Gift</a></li>
-                    <li><a href="/galerie" class="{{ request()->is('galerie') ? 'active' : '' }}">Galerie</a></li>
-                    <li><a href="/contact" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a></li>
+                    <li><a href="{{ route('edam-gift') }}" class="{{ request()->is('edam-gift') ? 'active' : '' }}">EDAM Gift</a></li>
+                    <li><a href="{{ route('galerie') }}" class="{{ request()->is('galerie') ? 'active' : '' }}">Galerie</a></li>
+                    <li><a href="{{ route('contact') }}" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a></li>
                 </ul>
             </nav>
             <div class="mobile-menu-toggle">
@@ -97,12 +99,12 @@ solutions fiables et adaptées pour particuliers et entreprises.</p>
                 <div class="footer-col">
                     <h4>Liens Rapides</h4>
                     <ul class="footer-links">
-                        <li><a href="/">Accueil</a></li>
-                        <li><a href="/about">A Propos</a></li>
-                        <li><a href="/edam-clean">EDAM Clean</a></li>
-                        <li><a href="/edam_gift">EDAM Gift</a></li>
-                        <li><a href="/galerie">Galerie</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="{{ route('accueil') }}">Accueil</a></li>
+                        <li><a href="{{ route('apropos') }}">A Propos</a></li>
+                        <li><a href="{{ route('edam-clean') }}">EDAM Clean</a></li>
+                        <li><a href="{{ route('edam-gift') }}">EDAM Gift</a></li>
+                        <li><a href="{{ route('galerie') }}">Galerie</a></li>
+                        <li><a href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">

@@ -1,4 +1,10 @@
-@extends('layouts.public.haeder')
+@extends('layouts.public.header')
+
+@section('title', 'A ')
+
+@section('meta-description', 'Restez informé des dernières tendances et innovations en communication avec Firme Attou Co. Découvrez nos actualités, études de cas, projets récents et conseils pour booster votre stratégie de communication.')
+@section('meta-keywords', 'actualités communication, tendances communication, actualités digitales, stratégies de communication, actualités de l\'agence')
+
 
 @push('styles')
     <!-- Swiper CSS -->

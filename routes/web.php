@@ -8,21 +8,21 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('public.index');
-});
+})->name('accueil');
 
-Route::get('/about', function () {
+Route::get('/a-propos', function () {
     return view('public.about');
-});
+})->name('apropos');
 
 Route::get('/edam-clean', function () {
     return view('public.edam-clean');
-});
+})->name('edam-clean');
 
-Route::get('/edam_gift', [App\Http\Controllers\ProduitController::class, 'publicIndex'])->name('public.edam_gift');
-Route::get('/galerie', [GallerieController::class, 'publicIndex'])->name('public.galerie');
+Route::get('/edam-gift', [App\Http\Controllers\ProduitController::class, 'publicIndex'])->name('edam-gift');
+Route::get('/galerie', [GallerieController::class, 'publicIndex'])->name('galerie');
 Route::get('/contact', function () {
     return view('public.contact');
-});
+})->name('contact');
 route::post('/contact', [MessageController::class, 'store'])->name('messages.store');
 route::post('/edam-clean', [DevisController::class, 'store'])->name('devis.store');
 

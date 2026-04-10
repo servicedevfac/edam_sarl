@@ -1,4 +1,10 @@
-@extends('layouts.public.haeder')
+@extends('layouts.public.header')
+
+@section('title', 'A Propos')
+
+@section('meta-description', 'Restez informé des dernières tendances et innovations en communication avec Firme Attou Co. Découvrez nos actualités, études de cas, projets récents et conseils pour booster votre stratégie de communication.')
+@section('meta-keywords', 'actualités communication, tendances communication, actualités digitales, stratégies de communication, actualités de l\'agence')
+
 @section('content')
 
     <main>
@@ -7,7 +13,7 @@
             <div class="container">
                 <h1>A PROPOS DE NOUS</h1>
                 <div class="breadcrumb">
-                    <a href="index.html">Accueil</a> <i class="fas fa-chevron-right"></i> <span>A Propos</span>
+                    <a href="{{ route('accueil') }}">Accueil</a> <i class="fas fa-chevron-right"></i> <span>A Propos</span>
                 </div>
             </div>
         </section>
@@ -18,22 +24,12 @@
                 <div class="about-content">
                     <span class="about-tag">Notre Societe</span>
                     <h2>QUI SOMMES-NOUS ?</h2>
-                    <p>EDAM S.A.R.L est une entreprise multisectorielle engagée à offrir des solutions
-innovantes et adaptées aux besoins des particuliers, des entreprises et des
-institutions. Forte de son expertise et de son dynamisme, elle intervient dans
-plusieurs domaines afin d’apporter des services complets et de qualité
-</p>
-                    <p>Nous accompagnons nos clients dans la fourniture d’équipements, le nettoyage
-professionnel, l’aménagement d’espaces, la décoration intérieure, ainsi que
-l’organisation d’événements. Notre objectif est de garantir des prestations
-fiables, efficaces et parfaitement adaptées à chaque projet</p>
-<p>
-Grâce à une équipe compétente et passionnée, EDAM S.A.R.L met un point
-d’honneur à satisfaire ses clients en respectant les délais, en assurant un suivi
-rigoureux et en proposant des solutions sur mesure.
-
-</p>
-                    <a href="#" class="btn btn-primary  btn-small">Contactez-nous</a>
+                    <p>EDAM S.A.R.L est une entreprise multisectorielle engagée à offrir des solutions innovantes et adaptées aux besoins des particuliers, des entreprises et des institutions. Forte de son expertise et de son dynamisme, elle intervient dans plusieurs domaines afin d’apporter des services complets et de qualité </p>
+                    <p>Nous accompagnons nos clients dans la fourniture d’équipements, le nettoyage professionnel, l’aménagement d’espaces, la décoration intérieure, ainsi que l’organisation d’événements. Notre objectif est de garantir des prestations fiables, efficaces et parfaitement adaptées à chaque projet</p>
+                    <p>Grâce à une équipe compétente et passionnée, EDAM S.A.R.L met un point
+                        d’honneur à satisfaire ses clients en respectant les délais, en assurant un suivi
+                        rigoureux et en proposant des solutions sur mesure.</p>
+                    <a href="{{ route('contact') }}" class="btn btn-primary  btn-small">Contactez-nous</a>
                 </div>
                 <div class="about-image">
                     <img src="asset/images/about1.jpg" alt="Team collaborating">
