@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="@yield('meta-description', 'Firme Attou Co,')"/>
-    <meta name="keywords" content="@yield('meta-description', 'Firme Attou Co')"/>,
+    <meta name="description" content="@yield('meta-description')"/>
+    <meta name="keywords" content="@yield('meta-keywords')"/>
+
+
     <title>@yield('title') | EDAM SARL </title>
     <link rel="icon" type="image/png" href="{{ asset('asset/images/logo.png') }}">
     <link rel="stylesheet" href="{{ asset('asset/styles/style.css') }}">

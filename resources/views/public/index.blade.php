@@ -1,10 +1,9 @@
 @extends('layouts.public.header')
 
-@section('title', 'A ')
+@section('title', 'Excellence & Professionnalisme')
 
-@section('meta-description', 'Restez informé des dernières tendances et innovations en communication avec Firme Attou Co. Découvrez nos actualités, études de cas, projets récents et conseils pour booster votre stratégie de communication.')
-@section('meta-keywords', 'actualités communication, tendances communication, actualités digitales, stratégies de communication, actualités de l\'agence')
-
+@section('meta-description', 'EDAM SARL est une entreprise spécialisée en nettoyage professionnel, entretien et services en Côte d’Ivoire. Nous garantissons des espaces propres, sains et bien entretenus à Abidjan.')
+@section('meta-keywords', 'EDAM SARL, nettoyage Abidjan, entretien locaux, entreprise nettoyage Côte d’Ivoire, services propreté, decoration, cadeaux personnalisées')
 
 @push('styles')
     <!-- Swiper CSS -->

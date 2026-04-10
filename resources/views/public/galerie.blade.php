@@ -1,10 +1,9 @@
 @extends('layouts.public.header')
 
-@section('title', 'A Propos')
+@section('title', 'Galerie')
 
-@section('meta-description', 'Restez informé des dernières tendances et innovations en communication avec Firme Attou Co. Découvrez nos actualités, études de cas, projets récents et conseils pour booster votre stratégie de communication.')
-@section('meta-keywords', 'actualités communication, tendances communication, actualités digitales, stratégies de communication, actualités de l\'agence')
-
+@section('meta-description', 'Découvrez en images les réalisations de EDAM SARL : nettoyage, entretien et services professionnels à Abidjan.')
+@section('meta-keywords', 'galerie EDAM SARL, photos nettoyage Abidjan, réalisations entreprise, entretien locaux images')
 
 @section('content')
     <main>

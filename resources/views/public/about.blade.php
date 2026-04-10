@@ -2,8 +2,8 @@
 
 @section('title', 'A Propos')
 
-@section('meta-description', 'Restez informé des dernières tendances et innovations en communication avec Firme Attou Co. Découvrez nos actualités, études de cas, projets récents et conseils pour booster votre stratégie de communication.')
-@section('meta-keywords', 'actualités communication, tendances communication, actualités digitales, stratégies de communication, actualités de l\'agence')
+@section('meta-description', 'Découvrez EDAM SARL, une entreprise engagée dans le nettoyage, l’entretien et les services professionnels avec une expertise reconnue en Côte d’Ivoire.')
+@section('meta-keywords', 'à propos EDAM SARL, société nettoyage Abidjan, entreprise entretien Côte d’Ivoire, expertise propreté')
 
 @section('content')
 

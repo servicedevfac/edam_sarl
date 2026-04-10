@@ -1,10 +1,9 @@
 @extends('layouts.public.header')
 
-@section('title', 'A Propos')
+@section('title', 'Edam Clean')
 
-@section('meta-description', 'Restez informé des dernières tendances et innovations en communication avec Firme Attou Co. Découvrez nos actualités, études de cas, projets récents et conseils pour booster votre stratégie de communication.')
-@section('meta-keywords', 'actualités communication, tendances communication, actualités digitales, stratégies de communication, actualités de l\'agence')
-
+@section('meta-description', 'Service de nettoyage professionnel à Abidjan avec EDAM SARL : bureaux, maisons, vitres et espaces industriels.')
+@section('meta-keywords', 'nettoyage bureau Abidjan, nettoyage maison, nettoyage industriel, société nettoyage Côte d’Ivoire')
 
 @section('content')
     <main>
